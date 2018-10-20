@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>esX Notes</title>
+  <meta name="description" content="esX Notes">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="esX Notes" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="github.com/INmais" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="esX Notes" />
+  
+  
+  
+
+<meta name="author" content="Técnico Lisboa">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+
+<link rel="next" href="introduction-to-energy-systems.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<script src="libs/d3-4.5.0/d3.min.js"></script>
+<script src="libs/sankey-1/sankey.js"></script>
+<script src="libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+<script src="libs/plotly-binding-4.8.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.39.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.39.2/plotly-latest.min.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">esX Energy Services - Support notes</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Support Notes</a></li>
+<li class="part"><span><b>I Introduction to Energy Systems</b></span></li>
+<li class="chapter" data-level="1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html"><i class="fa fa-check"></i><b>1</b> Introduction to Energy Systems</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-definition"><i class="fa fa-check"></i><b>1.1</b> Energy definition</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-definition-1"><i class="fa fa-check"></i><b>1.1.1</b> Energy definition</a></li>
+<li class="chapter" data-level="1.1.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#power-definition"><i class="fa fa-check"></i><b>1.1.2</b> Power definition</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-system"><i class="fa fa-check"></i><b>1.2</b> Energy System</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#reference-energy-system"><i class="fa fa-check"></i><b>1.2.1</b> Reference Energy System</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-services-definition"><i class="fa fa-check"></i><b>1.3</b> Energy Services Definition</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#tools-to-describe-energy-systems"><i class="fa fa-check"></i><b>1.4</b> Tools to describe Energy Systems</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-balance"><i class="fa fa-check"></i><b>1.4.1</b> Energy balance</a></li>
+<li class="chapter" data-level="1.4.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#how-energy-is-used-in-the-residential-sector-in-portugal"><i class="fa fa-check"></i><b>1.4.2</b> How energy is used in the residential sector in Portugal</a></li>
+<li class="chapter" data-level="1.4.3" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#flux-diagrams"><i class="fa fa-check"></i><b>1.4.3</b> Flux Diagrams</a></li>
+<li class="chapter" data-level="1.4.4" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#sankey-diagram"><i class="fa fa-check"></i><b>1.4.4</b> Sankey Diagram</a></li>
+<li class="chapter" data-level="1.4.5" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-around-the-world"><i class="fa fa-check"></i><b>1.4.5</b> Energy around the World</a></li>
+<li class="chapter" data-level="1.4.6" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#other-sankey-diagrams"><i class="fa fa-check"></i><b>1.4.6</b> Other Sankey Diagrams</a></li>
+<li class="chapter" data-level="1.4.7" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-efficiency-indicators"><i class="fa fa-check"></i><b>1.4.7</b> Energy Efficiency Indicators</a></li>
+<li class="chapter" data-level="1.4.8" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-efficiency-indicators-1"><i class="fa fa-check"></i><b>1.4.8</b> Energy Efficiency Indicators</a></li>
+<li class="chapter" data-level="1.4.9" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#services-energy-indicators"><i class="fa fa-check"></i><b>1.4.9</b> Services energy indicators</a></li>
+<li class="chapter" data-level="1.4.10" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#transports-energy-indicators"><i class="fa fa-check"></i><b>1.4.10</b> Transports energy indicators</a></li>
+<li class="chapter" data-level="1.4.11" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#references"><i class="fa fa-check"></i><b>1.4.11</b> References</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Energy Services in Buildings</b></span></li>
+<li class="chapter" data-level="2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html"><i class="fa fa-check"></i><b>2</b> Energy Services in Buildings</a><ul>
+<li class="chapter" data-level="2.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-in-buildings"><i class="fa fa-check"></i><b>2.1</b> Energy in Buildings</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#final-energy-consumption-by-sector-and-buildings-energy-mix-2010"><i class="fa fa-check"></i><b>2.1.1</b> Final energy consumption by sector and buildings energy mix, 2010</a></li>
+<li class="chapter" data-level="2.1.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#economic-life-spans-of-energy-consuming-equipment-and-infrastructure"><i class="fa fa-check"></i><b>2.1.2</b> Economic life spans of energy-consuming equipment and infrastructure</a></li>
+<li class="chapter" data-level="2.1.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#distributed-energy-resources"><i class="fa fa-check"></i><b>2.1.3</b> Distributed Energy Resources</a></li>
+<li class="chapter" data-level="2.1.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-electricity-use-as-a-share-of-total-electricity-consumption"><i class="fa fa-check"></i><b>2.1.4</b> Buildings electricity use as a share of total electricity consumption</a></li>
+<li class="chapter" data-level="2.1.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-use-for-power-generation-and-total-final-electricity-demand-2010"><i class="fa fa-check"></i><b>2.1.5</b> Energy use for power generation and total final electricity demand, 2010</a></li>
+<li class="chapter" data-level="2.1.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-end-use-energy-consumption-2010"><i class="fa fa-check"></i><b>2.1.6</b> Buildings end-use energy consumption, 2010</a></li>
+<li class="chapter" data-level="2.1.7" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#global-buildings-energy-consumption-by-energy-source-and-direct-co2-emissions"><i class="fa fa-check"></i><b>2.1.7</b> Global buildings energy consumption by energy source and direct CO2 emissions</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-sector-energy-consumption-by-energy-source"><i class="fa fa-check"></i><b>2.2</b> Buildings sector energy consumption by energy source</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#contribution-of-co2-emissions-reduction-options-between-the-6ds-and-2ds"><i class="fa fa-check"></i><b>2.2.1</b> Contribution of CO2 emissions reduction options between the 6DS and 2DS</a></li>
+<li class="chapter" data-level="2.2.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#average-house-size-in-relation-to-gdp-per-capita-in-the-2ds"><i class="fa fa-check"></i><b>2.2.2</b> Average house size in relation to GDP per capita in the 2DS</a></li>
+<li class="chapter" data-level="2.2.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#residential-sub-sector-energy-consumption-by-end-use-and-intensity-for-selected-countries"><i class="fa fa-check"></i><b>2.2.3</b> Residential sub-sector energy consumption by end-use and intensity for selected countries</a></li>
+<li class="chapter" data-level="2.2.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-and-co2-emissions-savings-from-6ds-to-2ds-in-the-residential-sub-sector"><i class="fa fa-check"></i><b>2.2.4</b> Energy and CO2 emissions savings from 6DS to 2DS in the residential sub-sector</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#services-sub-sector-energy-consumption-by-end-use-and-intensity-for-selected-countries"><i class="fa fa-check"></i><b>2.3</b> Services sub-sector energy consumption by end-use and intensity for selected countries</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#contribution-of-co2-emissions-reduction-options"><i class="fa fa-check"></i><b>2.3.1</b> Contribution of CO2 emissions reduction options</a></li>
+<li class="chapter" data-level="2.3.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-and-co2-emissions-savings-from-6ds-to-2ds-in-the-services-sub-sector"><i class="fa fa-check"></i><b>2.3.2</b> Energy and CO2 emissions savings from 6DS to 2DS in the services sub-sector</a></li>
+<li class="chapter" data-level="2.3.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#additional-investment-needs-and-cumulative-energy-savings-by-end-use"><i class="fa fa-check"></i><b>2.3.3</b> Additional investment needs and cumulative energy savings by end-use</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#electricity-consumption-comparison"><i class="fa fa-check"></i><b>2.4</b> Electricity Consumption (Comparison)</a></li>
+<li class="chapter" data-level="2.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#survey-on-energy-consumption-in-households---2010-portugal"><i class="fa fa-check"></i><b>2.5</b> Survey on energy consumption in households - 2010 (Portugal)</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-do-parque-habitacional-por-ano-de-construcao---portugal-2010"><i class="fa fa-check"></i><b>2.5.1</b> Caracterização do parque habitacional por ano de construção - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-alojamentos-por-tipologia-de-area-urbana---portugal-2010"><i class="fa fa-check"></i><b>2.5.2</b> Caracterização dos alojamentos por tipologia de área urbana - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#condicoes-de-habitabilidade-dos-alojamentos---portugal-2010"><i class="fa fa-check"></i><b>2.5.3</b> Condições de habitabilidade dos alojamentos - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#tipologia-de-vidros-por-orientacao-de-fachadas---portugal-2010"><i class="fa fa-check"></i><b>2.5.4</b> Tipologia de vidros por orientação de fachadas - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#n.-de-alojamentos-com-isolamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.5</b> N.º de alojamentos com isolamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-total-com-energia-no-alojamento-e-no-transporte---portugal-e-nuts-i-2010"><i class="fa fa-check"></i><b>2.5.6</b> Consumo e despesa total com energia no alojamento e no transporte - Portugal e NUTS I, 2010</a></li>
+<li class="chapter" data-level="2.5.7" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-com-energia-no-alojamento-por-tipo-de-fonte---portugal-2010"><i class="fa fa-check"></i><b>2.5.7</b> Consumo e despesa com energia no alojamento por tipo de fonte - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.8" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-de-energia-tep-no-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.8</b> Consumo de energia (tep) no alojamento por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.9" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-de-energia-por-alojamento-tepalojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.9</b> Consumo de energia por alojamento (tep/alojamento) por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.10" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-com-energia-no-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.10</b> Despesa com energia (€) no alojamento por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.11" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-com-energia-por-alojamento-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.11</b> Despesa com energia por alojamento (€/alojamento) por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.12" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#numero-de-alojamentos-por-numero-de-veiculos-automoveis-afectos-ao-alojamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.12</b> Número de alojamentos por número de veículos automóveis afectos ao alojamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.13" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#numero-de-alojamentos-por-numero-de-motociclos-afectos-ao-alojamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.13</b> Número de alojamentos por número de motociclos afectos ao alojamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.14" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-com-combustiveis-utilizados-nos-veiculos-afectos-aos-individuos-residentes-nos-alojamentos-por-tipo-de-combustivel---portugal-2010"><i class="fa fa-check"></i><b>2.5.14</b> Consumo e despesa com combústiveis utilizados nos veículos afectos aos indivíduos residentes nos alojamentos por tipo de combustível - Portugal, 2010 *</a></li>
+<li class="chapter" data-level="2.5.15" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-media-mensal-com-combustiveis-utilizados-nos-veiculos-afectos-aos-individuos-residentes-nos-alojamentos-por-escalao-de-rendimento---portugal-2010"><i class="fa fa-check"></i><b>2.5.15</b> Despesa média mensal (€) com combustíveis utilizados nos veículos afectos aos indivíduos residentes nos alojamentos por escalão de rendimento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.16" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-para-aquecimento-do-ambiente-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.16</b> Caracterização dos equipamentos utilizados para Aquecimento do ambiente por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.17" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-do-parque-de-equipamentos-utilizados-arrefecimento-do-ambiente---portugal-2010"><i class="fa fa-check"></i><b>2.5.17</b> Caracterização do parque de equipamentos utilizados arrefecimento do ambiente - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.18" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-para-aquecimento-de-aguas-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.18</b> Caracterização dos equipamentos utilizados para Aquecimento de águas por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.19" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-na-cozinha-por-tipo-de-equipamento-e-por-nuts-i-2010"><i class="fa fa-check"></i><b>2.5.19</b> Caracterização dos equipamentos utilizados na Cozinha por tipo de equipamento e por NUTS I, 2010</a></li>
+<li class="chapter" data-level="2.5.20" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-grandes-electrodomesticos-utilizados-nos-alojamentos-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.20</b> Caracterização dos Grandes electrodomésticos utilizados nos alojamentos por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.21" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-pequenos-electrodomesticos-utilizados-no-alojamento-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.21</b> Caracterização dos Pequenos electrodomésticos utilizados no alojamento por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.22" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-de-entretenimento-e-de-informatica-utilizados-nos-alojamentos-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.22</b> Caracterização dos Equipamentos de entretenimento e de informática utilizados nos alojamentos por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.23" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-da-iluminacao-nos-alojamentos-por-tipo-de-lampada---portugal-2010"><i class="fa fa-check"></i><b>2.5.23</b> Caracterização da Iluminação nos alojamentos por tipo de lâmpada - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.24" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#classes-de-eficiencia-dos-equipamentos---portugal-2010"><i class="fa fa-check"></i><b>2.5.24</b> Classes de eficiência dos equipamentos - Portugal, 2010</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#references-1"><i class="fa fa-check"></i><b>2.6</b> References</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-demand-in-buildings"><i class="fa fa-check"></i><b>2.6.1</b> Energy Demand in Buildings</a></li>
+<li class="chapter" data-level="2.6.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-uses-in-buildings"><i class="fa fa-check"></i><b>2.6.2</b> Energy Uses in Buildings</a></li>
+<li class="chapter" data-level="2.6.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-in-residential-buildings"><i class="fa fa-check"></i><b>2.6.3</b> Energy in Residential Buildings</a></li>
+<li class="chapter" data-level="2.6.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#other"><i class="fa fa-check"></i><b>2.6.4</b> Other</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Space Heating and Cooling</b></span></li>
+<li class="chapter" data-level="3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html"><i class="fa fa-check"></i><b>3</b> Space Heating and Cooling</a><ul>
+<li class="chapter" data-level="3.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermodynamic-heat-transfer-mechanics"><i class="fa fa-check"></i><b>3.1</b> Thermodynamic Heat Transfer Mechanics</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#first-law-of-thermodynamics"><i class="fa fa-check"></i><b>3.1.1</b> First law of thermodynamics</a></li>
+<li class="chapter" data-level="3.1.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#second-law-of-thermodynamics"><i class="fa fa-check"></i><b>3.1.2</b> Second Law of Thermodynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#space-heating-and-cooling-models"><i class="fa fa-check"></i><b>3.2</b> Space Heating and Cooling Models</a></li>
+<li class="chapter" data-level="3.3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermal-comfort"><i class="fa fa-check"></i><b>3.3</b> Thermal Comfort</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#pmv"><i class="fa fa-check"></i><b>3.3.1</b> PMV</a></li>
+<li class="chapter" data-level="3.3.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#hot-water-modeling"><i class="fa fa-check"></i><b>3.3.2</b> Hot water modeling</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#influence-of-climate"><i class="fa fa-check"></i><b>3.4</b> Influence of climate</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#degree-days"><i class="fa fa-check"></i><b>3.4.1</b> Degree Days</a></li>
+<li class="chapter" data-level="3.4.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#hdd-heating-degree-days"><i class="fa fa-check"></i><b>3.4.2</b> HDD (Heating Degree Days)</a></li>
+<li class="chapter" data-level="3.4.3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#cdd-cooling-degree-days"><i class="fa fa-check"></i><b>3.4.3</b> CDD (Cooling Degree Days)</a></li>
+<li class="chapter" data-level="3.4.4" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#heating-degree-days-hdd-and-cooling-degree-days-cdd-in-europe"><i class="fa fa-check"></i><b>3.4.4</b> Heating Degree Days (HDD) and Cooling Degree Days (CDD) in Europe</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermal-balance"><i class="fa fa-check"></i><b>3.5</b> Thermal Balance</a></li>
+<li class="chapter" data-level="3.6" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#simplified-heating-and-cooling-services-modeling"><i class="fa fa-check"></i><b>3.6</b> Simplified Heating and Cooling Services Modeling</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#references-2"><i class="fa fa-check"></i><b>3.6.1</b> References</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Hot water, Lighting and electrical devices</b></span></li>
+<li class="chapter" data-level="4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html"><i class="fa fa-check"></i><b>4</b> Hot water, Lighting and electrical devices</a><ul>
+<li class="chapter" data-level="4.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#basic-concepts"><i class="fa fa-check"></i><b>4.1</b> Basic Concepts</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#electrical-potential"><i class="fa fa-check"></i><b>4.1.1</b> Electrical Potential</a></li>
+<li class="chapter" data-level="4.1.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#power-factor-voltage-and-current-phase-relationship"><i class="fa fa-check"></i><b>4.1.2</b> Power Factor, Voltage and current phase relationship</a></li>
+<li class="chapter" data-level="4.1.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#reactive-loads-q"><i class="fa fa-check"></i><b>4.1.3</b> Reactive Loads (Q)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#hot-water-modeling-1"><i class="fa fa-check"></i><b>4.2</b> Hot water modeling</a></li>
+<li class="chapter" data-level="4.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#electrical-appliances"><i class="fa fa-check"></i><b>4.3</b> Electrical Appliances</a></li>
+<li class="chapter" data-level="4.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-concepts"><i class="fa fa-check"></i><b>4.4</b> Lighting Concepts</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-concepts-1"><i class="fa fa-check"></i><b>4.4.1</b> Lighting Concepts</a></li>
+<li class="chapter" data-level="4.4.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-conditions"><i class="fa fa-check"></i><b>4.4.2</b> Lighting Conditions</a></li>
+<li class="chapter" data-level="4.4.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#visual-comfort"><i class="fa fa-check"></i><b>4.4.3</b> Visual comfort</a></li>
+<li class="chapter" data-level="4.4.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#wiens-displacement-law"><i class="fa fa-check"></i><b>4.4.4</b> Wien’s displacement law</a></li>
+<li class="chapter" data-level="4.4.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#glare"><i class="fa fa-check"></i><b>4.4.5</b> Glare</a></li>
+<li class="chapter" data-level="4.4.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#illuminance-from-a-light-source"><i class="fa fa-check"></i><b>4.4.6</b> Illuminance from a Light Source</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-service-l"><i class="fa fa-check"></i><b>4.5</b> Lighting Service (L)</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#inverse-square-law"><i class="fa fa-check"></i><b>4.5.1</b> Inverse Square Law</a></li>
+<li class="chapter" data-level="4.5.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#cosine-law-lamberts-law"><i class="fa fa-check"></i><b>4.5.2</b> Cosine Law (Lambert’s Law)</a></li>
+<li class="chapter" data-level="4.5.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#cosine-cubed-law"><i class="fa fa-check"></i><b>4.5.3</b> Cosine Cubed Law</a></li>
+<li class="chapter" data-level="4.5.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#useful-lumen-output-ulo"><i class="fa fa-check"></i><b>4.5.4</b> Useful Lumen Output (ULO)</a></li>
+<li class="chapter" data-level="4.5.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#illumination-average-area"><i class="fa fa-check"></i><b>4.5.5</b> Illumination Average Area</a></li>
+<li class="chapter" data-level="4.5.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#efficacy-index"><i class="fa fa-check"></i><b>4.5.6</b> Efficacy Index</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#references-3"><i class="fa fa-check"></i><b>4.6</b> References</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="references-4.html"><a href="references-4.html"><i class="fa fa-check"></i><b>A</b> References</a><ul>
+<li class="chapter" data-level="A.1" data-path="references-4.html"><a href="references-4.html#energy-services-definition-2"><i class="fa fa-check"></i><b>A.1</b> Energy Services Definition</a><ul>
+<li class="chapter" data-level="A.1.1" data-path="references-4.html"><a href="references-4.html#on-energy-services-definition"><i class="fa fa-check"></i><b>A.1.1</b> On Energy Services Definition</a></li>
+</ul></li>
+<li class="chapter" data-level="A.2" data-path="references-4.html"><a href="references-4.html#energy-services-in-buildings-1"><i class="fa fa-check"></i><b>A.2</b> Energy Services in Buildings</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="formulae.html"><a href="formulae.html"><i class="fa fa-check"></i><b>B</b> Formulae</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">esX Notes</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">esX Notes</h1>
+<h4 class="author"><em>Técnico Lisboa</em></h4>
+</div>
+<div id="support-notes" class="section level1 unnumbered">
+<h1>Support Notes</h1>
+<p>Support notes of the Energy Services Course.</p>
+<p>Here you may find:</p>
+<ul>
+<li><p>References given;</p></li>
+<li><p>Data and charts analysed;</p></li>
+<li><p>Formulae;</p></li>
+<li><p>Other ressources.</p></li>
+</ul>
+
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="introduction-to-energy-systems.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"text": "Edit"
+},
+"download": ["esX Notes.pdf", "esX Notes.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

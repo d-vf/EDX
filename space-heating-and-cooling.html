@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>esX Notes</title>
+  <meta name="description" content="esX Notes">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="esX Notes" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="github.com/INmais" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="esX Notes" />
+  
+  
+  
+
+<meta name="author" content="Técnico Lisboa">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="energy-services-in-buildings.html">
+<link rel="next" href="hot-water-lighting-and-electrical-devices.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<script src="libs/d3-4.5.0/d3.min.js"></script>
+<script src="libs/sankey-1/sankey.js"></script>
+<script src="libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+<script src="libs/plotly-binding-4.8.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.39.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.39.2/plotly-latest.min.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">esX Energy Services - Support notes</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Support Notes</a></li>
+<li class="part"><span><b>I Introduction to Energy Systems</b></span></li>
+<li class="chapter" data-level="1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html"><i class="fa fa-check"></i><b>1</b> Introduction to Energy Systems</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-definition"><i class="fa fa-check"></i><b>1.1</b> Energy definition</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-definition-1"><i class="fa fa-check"></i><b>1.1.1</b> Energy definition</a></li>
+<li class="chapter" data-level="1.1.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#power-definition"><i class="fa fa-check"></i><b>1.1.2</b> Power definition</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-system"><i class="fa fa-check"></i><b>1.2</b> Energy System</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#reference-energy-system"><i class="fa fa-check"></i><b>1.2.1</b> Reference Energy System</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-services-definition"><i class="fa fa-check"></i><b>1.3</b> Energy Services Definition</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#tools-to-describe-energy-systems"><i class="fa fa-check"></i><b>1.4</b> Tools to describe Energy Systems</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-balance"><i class="fa fa-check"></i><b>1.4.1</b> Energy balance</a></li>
+<li class="chapter" data-level="1.4.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#how-energy-is-used-in-the-residential-sector-in-portugal"><i class="fa fa-check"></i><b>1.4.2</b> How energy is used in the residential sector in Portugal</a></li>
+<li class="chapter" data-level="1.4.3" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#flux-diagrams"><i class="fa fa-check"></i><b>1.4.3</b> Flux Diagrams</a></li>
+<li class="chapter" data-level="1.4.4" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#sankey-diagram"><i class="fa fa-check"></i><b>1.4.4</b> Sankey Diagram</a></li>
+<li class="chapter" data-level="1.4.5" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-around-the-world"><i class="fa fa-check"></i><b>1.4.5</b> Energy around the World</a></li>
+<li class="chapter" data-level="1.4.6" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#other-sankey-diagrams"><i class="fa fa-check"></i><b>1.4.6</b> Other Sankey Diagrams</a></li>
+<li class="chapter" data-level="1.4.7" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-efficiency-indicators"><i class="fa fa-check"></i><b>1.4.7</b> Energy Efficiency Indicators</a></li>
+<li class="chapter" data-level="1.4.8" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-efficiency-indicators-1"><i class="fa fa-check"></i><b>1.4.8</b> Energy Efficiency Indicators</a></li>
+<li class="chapter" data-level="1.4.9" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#services-energy-indicators"><i class="fa fa-check"></i><b>1.4.9</b> Services energy indicators</a></li>
+<li class="chapter" data-level="1.4.10" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#transports-energy-indicators"><i class="fa fa-check"></i><b>1.4.10</b> Transports energy indicators</a></li>
+<li class="chapter" data-level="1.4.11" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#references"><i class="fa fa-check"></i><b>1.4.11</b> References</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Energy Services in Buildings</b></span></li>
+<li class="chapter" data-level="2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html"><i class="fa fa-check"></i><b>2</b> Energy Services in Buildings</a><ul>
+<li class="chapter" data-level="2.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-in-buildings"><i class="fa fa-check"></i><b>2.1</b> Energy in Buildings</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#final-energy-consumption-by-sector-and-buildings-energy-mix-2010"><i class="fa fa-check"></i><b>2.1.1</b> Final energy consumption by sector and buildings energy mix, 2010</a></li>
+<li class="chapter" data-level="2.1.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#economic-life-spans-of-energy-consuming-equipment-and-infrastructure"><i class="fa fa-check"></i><b>2.1.2</b> Economic life spans of energy-consuming equipment and infrastructure</a></li>
+<li class="chapter" data-level="2.1.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#distributed-energy-resources"><i class="fa fa-check"></i><b>2.1.3</b> Distributed Energy Resources</a></li>
+<li class="chapter" data-level="2.1.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-electricity-use-as-a-share-of-total-electricity-consumption"><i class="fa fa-check"></i><b>2.1.4</b> Buildings electricity use as a share of total electricity consumption</a></li>
+<li class="chapter" data-level="2.1.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-use-for-power-generation-and-total-final-electricity-demand-2010"><i class="fa fa-check"></i><b>2.1.5</b> Energy use for power generation and total final electricity demand, 2010</a></li>
+<li class="chapter" data-level="2.1.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-end-use-energy-consumption-2010"><i class="fa fa-check"></i><b>2.1.6</b> Buildings end-use energy consumption, 2010</a></li>
+<li class="chapter" data-level="2.1.7" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#global-buildings-energy-consumption-by-energy-source-and-direct-co2-emissions"><i class="fa fa-check"></i><b>2.1.7</b> Global buildings energy consumption by energy source and direct CO2 emissions</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-sector-energy-consumption-by-energy-source"><i class="fa fa-check"></i><b>2.2</b> Buildings sector energy consumption by energy source</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#contribution-of-co2-emissions-reduction-options-between-the-6ds-and-2ds"><i class="fa fa-check"></i><b>2.2.1</b> Contribution of CO2 emissions reduction options between the 6DS and 2DS</a></li>
+<li class="chapter" data-level="2.2.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#average-house-size-in-relation-to-gdp-per-capita-in-the-2ds"><i class="fa fa-check"></i><b>2.2.2</b> Average house size in relation to GDP per capita in the 2DS</a></li>
+<li class="chapter" data-level="2.2.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#residential-sub-sector-energy-consumption-by-end-use-and-intensity-for-selected-countries"><i class="fa fa-check"></i><b>2.2.3</b> Residential sub-sector energy consumption by end-use and intensity for selected countries</a></li>
+<li class="chapter" data-level="2.2.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-and-co2-emissions-savings-from-6ds-to-2ds-in-the-residential-sub-sector"><i class="fa fa-check"></i><b>2.2.4</b> Energy and CO2 emissions savings from 6DS to 2DS in the residential sub-sector</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#services-sub-sector-energy-consumption-by-end-use-and-intensity-for-selected-countries"><i class="fa fa-check"></i><b>2.3</b> Services sub-sector energy consumption by end-use and intensity for selected countries</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#contribution-of-co2-emissions-reduction-options"><i class="fa fa-check"></i><b>2.3.1</b> Contribution of CO2 emissions reduction options</a></li>
+<li class="chapter" data-level="2.3.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-and-co2-emissions-savings-from-6ds-to-2ds-in-the-services-sub-sector"><i class="fa fa-check"></i><b>2.3.2</b> Energy and CO2 emissions savings from 6DS to 2DS in the services sub-sector</a></li>
+<li class="chapter" data-level="2.3.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#additional-investment-needs-and-cumulative-energy-savings-by-end-use"><i class="fa fa-check"></i><b>2.3.3</b> Additional investment needs and cumulative energy savings by end-use</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#electricity-consumption-comparison"><i class="fa fa-check"></i><b>2.4</b> Electricity Consumption (Comparison)</a></li>
+<li class="chapter" data-level="2.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#survey-on-energy-consumption-in-households---2010-portugal"><i class="fa fa-check"></i><b>2.5</b> Survey on energy consumption in households - 2010 (Portugal)</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-do-parque-habitacional-por-ano-de-construcao---portugal-2010"><i class="fa fa-check"></i><b>2.5.1</b> Caracterização do parque habitacional por ano de construção - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-alojamentos-por-tipologia-de-area-urbana---portugal-2010"><i class="fa fa-check"></i><b>2.5.2</b> Caracterização dos alojamentos por tipologia de área urbana - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#condicoes-de-habitabilidade-dos-alojamentos---portugal-2010"><i class="fa fa-check"></i><b>2.5.3</b> Condições de habitabilidade dos alojamentos - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#tipologia-de-vidros-por-orientacao-de-fachadas---portugal-2010"><i class="fa fa-check"></i><b>2.5.4</b> Tipologia de vidros por orientação de fachadas - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#n.-de-alojamentos-com-isolamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.5</b> N.º de alojamentos com isolamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-total-com-energia-no-alojamento-e-no-transporte---portugal-e-nuts-i-2010"><i class="fa fa-check"></i><b>2.5.6</b> Consumo e despesa total com energia no alojamento e no transporte - Portugal e NUTS I, 2010</a></li>
+<li class="chapter" data-level="2.5.7" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-com-energia-no-alojamento-por-tipo-de-fonte---portugal-2010"><i class="fa fa-check"></i><b>2.5.7</b> Consumo e despesa com energia no alojamento por tipo de fonte - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.8" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-de-energia-tep-no-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.8</b> Consumo de energia (tep) no alojamento por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.9" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-de-energia-por-alojamento-tepalojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.9</b> Consumo de energia por alojamento (tep/alojamento) por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.10" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-com-energia-no-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.10</b> Despesa com energia (€) no alojamento por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.11" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-com-energia-por-alojamento-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.11</b> Despesa com energia por alojamento (€/alojamento) por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.12" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#numero-de-alojamentos-por-numero-de-veiculos-automoveis-afectos-ao-alojamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.12</b> Número de alojamentos por número de veículos automóveis afectos ao alojamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.13" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#numero-de-alojamentos-por-numero-de-motociclos-afectos-ao-alojamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.13</b> Número de alojamentos por número de motociclos afectos ao alojamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.14" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-com-combustiveis-utilizados-nos-veiculos-afectos-aos-individuos-residentes-nos-alojamentos-por-tipo-de-combustivel---portugal-2010"><i class="fa fa-check"></i><b>2.5.14</b> Consumo e despesa com combústiveis utilizados nos veículos afectos aos indivíduos residentes nos alojamentos por tipo de combustível - Portugal, 2010 *</a></li>
+<li class="chapter" data-level="2.5.15" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-media-mensal-com-combustiveis-utilizados-nos-veiculos-afectos-aos-individuos-residentes-nos-alojamentos-por-escalao-de-rendimento---portugal-2010"><i class="fa fa-check"></i><b>2.5.15</b> Despesa média mensal (€) com combustíveis utilizados nos veículos afectos aos indivíduos residentes nos alojamentos por escalão de rendimento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.16" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-para-aquecimento-do-ambiente-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.16</b> Caracterização dos equipamentos utilizados para Aquecimento do ambiente por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.17" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-do-parque-de-equipamentos-utilizados-arrefecimento-do-ambiente---portugal-2010"><i class="fa fa-check"></i><b>2.5.17</b> Caracterização do parque de equipamentos utilizados arrefecimento do ambiente - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.18" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-para-aquecimento-de-aguas-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.18</b> Caracterização dos equipamentos utilizados para Aquecimento de águas por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.19" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-na-cozinha-por-tipo-de-equipamento-e-por-nuts-i-2010"><i class="fa fa-check"></i><b>2.5.19</b> Caracterização dos equipamentos utilizados na Cozinha por tipo de equipamento e por NUTS I, 2010</a></li>
+<li class="chapter" data-level="2.5.20" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-grandes-electrodomesticos-utilizados-nos-alojamentos-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.20</b> Caracterização dos Grandes electrodomésticos utilizados nos alojamentos por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.21" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-pequenos-electrodomesticos-utilizados-no-alojamento-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.21</b> Caracterização dos Pequenos electrodomésticos utilizados no alojamento por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.22" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-de-entretenimento-e-de-informatica-utilizados-nos-alojamentos-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.22</b> Caracterização dos Equipamentos de entretenimento e de informática utilizados nos alojamentos por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.23" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-da-iluminacao-nos-alojamentos-por-tipo-de-lampada---portugal-2010"><i class="fa fa-check"></i><b>2.5.23</b> Caracterização da Iluminação nos alojamentos por tipo de lâmpada - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.24" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#classes-de-eficiencia-dos-equipamentos---portugal-2010"><i class="fa fa-check"></i><b>2.5.24</b> Classes de eficiência dos equipamentos - Portugal, 2010</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#references-1"><i class="fa fa-check"></i><b>2.6</b> References</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-demand-in-buildings"><i class="fa fa-check"></i><b>2.6.1</b> Energy Demand in Buildings</a></li>
+<li class="chapter" data-level="2.6.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-uses-in-buildings"><i class="fa fa-check"></i><b>2.6.2</b> Energy Uses in Buildings</a></li>
+<li class="chapter" data-level="2.6.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-in-residential-buildings"><i class="fa fa-check"></i><b>2.6.3</b> Energy in Residential Buildings</a></li>
+<li class="chapter" data-level="2.6.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#other"><i class="fa fa-check"></i><b>2.6.4</b> Other</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Space Heating and Cooling</b></span></li>
+<li class="chapter" data-level="3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html"><i class="fa fa-check"></i><b>3</b> Space Heating and Cooling</a><ul>
+<li class="chapter" data-level="3.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermodynamic-heat-transfer-mechanics"><i class="fa fa-check"></i><b>3.1</b> Thermodynamic Heat Transfer Mechanics</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#first-law-of-thermodynamics"><i class="fa fa-check"></i><b>3.1.1</b> First law of thermodynamics</a></li>
+<li class="chapter" data-level="3.1.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#second-law-of-thermodynamics"><i class="fa fa-check"></i><b>3.1.2</b> Second Law of Thermodynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#space-heating-and-cooling-models"><i class="fa fa-check"></i><b>3.2</b> Space Heating and Cooling Models</a></li>
+<li class="chapter" data-level="3.3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermal-comfort"><i class="fa fa-check"></i><b>3.3</b> Thermal Comfort</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#pmv"><i class="fa fa-check"></i><b>3.3.1</b> PMV</a></li>
+<li class="chapter" data-level="3.3.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#hot-water-modeling"><i class="fa fa-check"></i><b>3.3.2</b> Hot water modeling</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#influence-of-climate"><i class="fa fa-check"></i><b>3.4</b> Influence of climate</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#degree-days"><i class="fa fa-check"></i><b>3.4.1</b> Degree Days</a></li>
+<li class="chapter" data-level="3.4.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#hdd-heating-degree-days"><i class="fa fa-check"></i><b>3.4.2</b> HDD (Heating Degree Days)</a></li>
+<li class="chapter" data-level="3.4.3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#cdd-cooling-degree-days"><i class="fa fa-check"></i><b>3.4.3</b> CDD (Cooling Degree Days)</a></li>
+<li class="chapter" data-level="3.4.4" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#heating-degree-days-hdd-and-cooling-degree-days-cdd-in-europe"><i class="fa fa-check"></i><b>3.4.4</b> Heating Degree Days (HDD) and Cooling Degree Days (CDD) in Europe</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermal-balance"><i class="fa fa-check"></i><b>3.5</b> Thermal Balance</a></li>
+<li class="chapter" data-level="3.6" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#simplified-heating-and-cooling-services-modeling"><i class="fa fa-check"></i><b>3.6</b> Simplified Heating and Cooling Services Modeling</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#references-2"><i class="fa fa-check"></i><b>3.6.1</b> References</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Hot water, Lighting and electrical devices</b></span></li>
+<li class="chapter" data-level="4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html"><i class="fa fa-check"></i><b>4</b> Hot water, Lighting and electrical devices</a><ul>
+<li class="chapter" data-level="4.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#basic-concepts"><i class="fa fa-check"></i><b>4.1</b> Basic Concepts</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#electrical-potential"><i class="fa fa-check"></i><b>4.1.1</b> Electrical Potential</a></li>
+<li class="chapter" data-level="4.1.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#power-factor-voltage-and-current-phase-relationship"><i class="fa fa-check"></i><b>4.1.2</b> Power Factor, Voltage and current phase relationship</a></li>
+<li class="chapter" data-level="4.1.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#reactive-loads-q"><i class="fa fa-check"></i><b>4.1.3</b> Reactive Loads (Q)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#hot-water-modeling-1"><i class="fa fa-check"></i><b>4.2</b> Hot water modeling</a></li>
+<li class="chapter" data-level="4.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#electrical-appliances"><i class="fa fa-check"></i><b>4.3</b> Electrical Appliances</a></li>
+<li class="chapter" data-level="4.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-concepts"><i class="fa fa-check"></i><b>4.4</b> Lighting Concepts</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-concepts-1"><i class="fa fa-check"></i><b>4.4.1</b> Lighting Concepts</a></li>
+<li class="chapter" data-level="4.4.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-conditions"><i class="fa fa-check"></i><b>4.4.2</b> Lighting Conditions</a></li>
+<li class="chapter" data-level="4.4.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#visual-comfort"><i class="fa fa-check"></i><b>4.4.3</b> Visual comfort</a></li>
+<li class="chapter" data-level="4.4.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#wiens-displacement-law"><i class="fa fa-check"></i><b>4.4.4</b> Wien’s displacement law</a></li>
+<li class="chapter" data-level="4.4.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#glare"><i class="fa fa-check"></i><b>4.4.5</b> Glare</a></li>
+<li class="chapter" data-level="4.4.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#illuminance-from-a-light-source"><i class="fa fa-check"></i><b>4.4.6</b> Illuminance from a Light Source</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-service-l"><i class="fa fa-check"></i><b>4.5</b> Lighting Service (L)</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#inverse-square-law"><i class="fa fa-check"></i><b>4.5.1</b> Inverse Square Law</a></li>
+<li class="chapter" data-level="4.5.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#cosine-law-lamberts-law"><i class="fa fa-check"></i><b>4.5.2</b> Cosine Law (Lambert’s Law)</a></li>
+<li class="chapter" data-level="4.5.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#cosine-cubed-law"><i class="fa fa-check"></i><b>4.5.3</b> Cosine Cubed Law</a></li>
+<li class="chapter" data-level="4.5.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#useful-lumen-output-ulo"><i class="fa fa-check"></i><b>4.5.4</b> Useful Lumen Output (ULO)</a></li>
+<li class="chapter" data-level="4.5.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#illumination-average-area"><i class="fa fa-check"></i><b>4.5.5</b> Illumination Average Area</a></li>
+<li class="chapter" data-level="4.5.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#efficacy-index"><i class="fa fa-check"></i><b>4.5.6</b> Efficacy Index</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#references-3"><i class="fa fa-check"></i><b>4.6</b> References</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="references-4.html"><a href="references-4.html"><i class="fa fa-check"></i><b>A</b> References</a><ul>
+<li class="chapter" data-level="A.1" data-path="references-4.html"><a href="references-4.html#energy-services-definition-2"><i class="fa fa-check"></i><b>A.1</b> Energy Services Definition</a><ul>
+<li class="chapter" data-level="A.1.1" data-path="references-4.html"><a href="references-4.html#on-energy-services-definition"><i class="fa fa-check"></i><b>A.1.1</b> On Energy Services Definition</a></li>
+</ul></li>
+<li class="chapter" data-level="A.2" data-path="references-4.html"><a href="references-4.html#energy-services-in-buildings-1"><i class="fa fa-check"></i><b>A.2</b> Energy Services in Buildings</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="formulae.html"><a href="formulae.html"><i class="fa fa-check"></i><b>B</b> Formulae</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">esX Notes</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="space-heating-and-cooling" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Space Heating and Cooling</h1>
+<div id="thermodynamic-heat-transfer-mechanics" class="section level2">
+<h2><span class="header-section-number">3.1</span> Thermodynamic Heat Transfer Mechanics</h2>
+<p>The key concept is the air temperature, which may be measured indoors or outdoors.</p>
+<p>Air temperature is a measure of the kinetic energy of air.It is measured with a dry bulb thermometer, which is a thermometer exposed to air but shielded from radiation and humidity.</p>
+<p>In space heating and temperature, when we talk about ambient temperature (the temperature of the surroundings) we assume, in general, that it is the air temperature We also have the mean radiant temperature concept, which is a measure of the amount of radiant heat transferred from a surface. The mean radiant temperature depends on the temperatures and emissivities of the surrounding surfaces as well as the view factor - the amount of the surface that is seen by the object.</p>
+<p>So the mean radiant temperature experienced by a person in a room with the sunlight streaming varies based on how much of his/her body is in the sun. Finally, the operative temperature concept, which combines the effects of the air and mean radiant temperatures into one metric only.</p>
+<p>It is often approximated as the average of air dry-bulb temperature and of the mean radiant temperature at the given place in a room.In buildings with low thermal mass, the operative temperature is sometimes considered to be simply the air temperature.</p>
+<div id="first-law-of-thermodynamics" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> First law of thermodynamics</h3>
+<p>The first law of thermodynamics tells us that when energy is transferred as work, as heat, or with matter, into or out of a system, the system’s internal energy changes in accordance to the law of conservation of energy.</p>
+<p>The difference between the conservation of energy in a close or open system is, in fact, that in an open system we have mass flow (for example outside air coming into a room) and this mass flow carries energy. This concept is fundamental to implement the heat balance in a control volume.</p>
+</div>
+<div id="second-law-of-thermodynamics" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Second Law of Thermodynamics</h3>
+<p>The Second Law of Thermodynamics implies that heat will not transfer from a colder to a hotter body without some external source of energy.</p>
+<p>We so have the heat transfer mechanisms whenever we have a temperature difference between two systems:</p>
+<p>e.g. the outside environment and the room or the room and the occupant.</p>
+<p>The heat gains through the building envelope (walls, windows, roofs and floors) occur through one of the heat transfer mechanisms: conduction, convection or radiation.</p>
+<ul>
+<li><p><em>Conduction</em> mechanism refers to heat exchange through solid surfaces (i.e. the transfer of heat by the interactions of atoms or molecules of a material through which the heat is being transferred).</p></li>
+<li><p><em>Convection</em> involves the transfer of heat by the mixing and motion of macroscopic portions of a fluid (i.e. to heat exchange between solid surfaces and moving fluids like a wall and air radiation mechanism refers to the heat exchange between two systems at different temperatures, like the exchange between the sky and a room through a transparent surface like a window).</p></li>
+<li><p><em>Radiation</em> , or radiant heat transfer, involves the transfer of heat by electromagnetic radiation that arises due to the temperature of a body. Heat flux is the rate of heat transfer per unit area. Heat is energy transferred as a result of a temperature difference.</p></li>
+</ul>
+<p><strong>Temperature</strong> is a measure of the amount of molecular energy contained in a substance.</p>
+<p><strong>Work</strong> is a transfer of energy resulting from a force acting through a distance.</p>
+<p><strong>Thermal conductivity</strong> is a measure of a substance’s ability to transfer heat through itself.</p>
+<p><strong>Log</strong> mean temperature difference is the ∆T that most accurately represents the ∆T for a heat exchanger.</p>
+<p>The local heat transfer coefficient represents a measure of the ability to transfer heat through a stagnant film layer.</p>
+<p>The overall heat transfer coefficient is the measure of the ability of a heat exchanger to transfer heat from one fluid to another.</p>
+<p>The bulk temperature is the temperature of the fluid that best represents the majority of the fluid which is not physically connected to the heat transfer site.</p>
+<div id="conservation-of-energy-formula" class="section level4">
+<h4><span class="header-section-number">3.1.2.1</span> Conservation of Energy Formula</h4>
+<p>(Closed System)</p>
+<p><span class="math display">\[\Delta U = Q - W \]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\Delta U\)</span> : as a change in internal energy</p>
+<p><span class="math inline">\(Q\)</span> : the net quantity of heat supplied to the system by its surroundings</p>
+<p><span class="math inline">\(W\)</span> : denotes the net work done by the system.</p>
+<p>(Open System)</p>
+<p><span class="math display">\[ \dot{Q} -\dot{W} = \sum \dot{m_{in}}  - \dot{h_{out}}\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\dot{m}\)</span> : is the change in mass with respect to time (“flow”)</p>
+</div>
+<div id="heat-transferred-by" class="section level4">
+<h4><span class="header-section-number">3.1.2.2</span> Heat transferred by:</h4>
+</div>
+<div id="conduction" class="section level4">
+<h4><span class="header-section-number">3.1.2.3</span> 1. Conduction</h4>
+<p><span class="math display">\[ \dot{Q}= KA \frac{T_{1}-T_{2}}{1} \]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(K\)</span> : is the thermal conductivity constant (obtained by experimentation in W/m.K.)</p>
+<p><span class="math inline">\(A\)</span> : is the area of the surface</p>
+<p><span class="math inline">\(T\)</span> : is for the temperature of the system</p>
+</div>
+<div id="convection" class="section level4">
+<h4><span class="header-section-number">3.1.2.4</span> 2. Convection</h4>
+<p><span class="math display">\[\dot{Q}= hA ({T_{1}-T_{2}}) \]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(h\)</span> : convective heat transfer coefficient</p>
+<p><span class="math inline">\(A\)</span> : is the area implied in the heat transfer process</p>
+<p><span class="math inline">\(T\)</span>: is for the temperature of the system</p>
+</div>
+<div id="radiation" class="section level4">
+<h4><span class="header-section-number">3.1.2.5</span> 3. Radiation</h4>
+<p><span class="math display">\[\dot{Q}= \varepsilon \sigma A ({T^{4}-T_0^{4}})\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\varepsilon\)</span> : is the emissivity of the system</p>
+<p><span class="math inline">\(\sigma\)</span> : is the constant of Stephan-Boltzmann <span class="math inline">\(5.670367(13)\times10^{-8} W \cdot m^{-2} \cdot K^{-8} )\)</span></p>
+<p><span class="math inline">\(A\)</span>: is the area involved in the heat transfer by radiation</p>
+<p><span class="math inline">\(({T^{4}-T_0^{4}})\)</span> : is the difference of temperature between two systems</p>
+</div>
+</div>
+</div>
+<div id="space-heating-and-cooling-models" class="section level2">
+<h2><span class="header-section-number">3.2</span> Space Heating and Cooling Models</h2>
+<p>To estimate the needs for space heating and cooling energy services, we can use three types of models:</p>
+<ul>
+<li><p>the models based in physical principles like thermodynamics and heat transfer;</p></li>
+<li><p>the statistical models, based on correlations between data sources, like energy consumption data and weather data;</p></li>
+<li><p>artificial intelligence models, which basically resort to methodologies like neural networks, fuzzy logic and other methodologies to construct models also based in data.</p></li>
+</ul>
+<div id="physical-models" class="section level4">
+<h4><span class="header-section-number">3.2.0.1</span> Physical models</h4>
+<p>Within physical models we can distinguish between two categories: simplified models,like the ones proposed in the norm ISO 52016 (the energy performance of buildings norms) or the detailed simulation tools, like Energy Plus, which basically use the same principles of the simplified models but are able to compute them for many data points and integrate all these details.</p>
+<p>The simplified models use the physical principles of thermodynamics (first and second law), and heat and mass transfer and apply them to a control volume. It requires the definition of comfort conditions, and the climate influence.</p>
+<p>These type of models have been used for many years to determine the heat and cooling needs of closed spaces in buildings, and provide reasonable estimations.However, it requires several assumptions and the accuracy depends on the quality of the assumptions (and the corresponding data).</p>
+</div>
+<div id="thermal-simulation" class="section level4">
+<h4><span class="header-section-number">3.2.0.2</span> Thermal simulation</h4>
+<p>Thermal simulation is the process of using computational tools, which are used in general in large buildings.In practice these tools implement the same principles of the simplified models, where each area in the building is a control volume.</p>
+<p>However, it enables to link all the areas and account for the heat and mass flow between the different areas.It requires the development of a geometric model of the space, the detailed characterization of constructive solutions, the list of the equipment and its schedules of use and, finally, also climate information.</p>
+<p>In general, we have a software tool to design the building and insert all the characterization, open tool or commercial, and then these tools use a computational tool that develops the thermal simulation.The most used tool is ENERGYPLUS, developed by the Department of Energy (DOE) of US.</p>
+</div>
+</div>
+<div id="thermal-comfort" class="section level2">
+<h2><span class="header-section-number">3.3</span> Thermal Comfort</h2>
+<p>The human body needs to maintain its temperature somewhere between 36ºC to 37ºC and we are able to do it reasonably well when the surrounding or ambient temperature is between 20ºC and 50ºC. That means that when the ambient temperature is below, our body starts to loose heat through radiation, convection, and conduction and we need to spend energy to keep it warm; if the ambient temperature is above, our body starts to gain heat through radiation, convection, conduction and we need to keep it cool.</p>
+<p>We feel cold when our skin temperature is under 37ºC. Then, the body initiates many mechanism to reduce heat losses:</p>
+<ul>
+<li><p>Vasoconstriction to decrease the flow of heat to the skin;No sweating; Shivering to produce heat at the muscle level</p></li>
+<li><p>Secretion of substances to increase heat production; and erection of hair to increase insulation.</p></li>
+</ul>
+<p>On the other hand we feel hot when our skin temperature is above 37ºC.</p>
+<p>The body only mechanism to loose heat is sweating, or evaporation of perspiration from the skin and the evaporative cooling from exhaled moisture.</p>
+<p>The external conditions that influence thermal comfort are:</p>
+<ul>
+<li><p>the ambient and radiant temperature, as it influences the heat exchange mechanism between the body and the environment</p></li>
+<li><p>the relative humidity (as it influencesthe rate of heat exchange through perspiration</p></li>
+<li><p>the air speed, as it influences the heat exchange through convection; our own metabolic rate (and the activity we are developing)</p></li>
+<li><p>the clothes that people wear,as they help to control heat exchange</p></li>
+</ul>
+<blockquote>
+<p>So, what is thermal Comfort?</p>
+</blockquote>
+<p>As defined by the ASHRAE Standard 55 (which is the Thermal Environmental Conditions for Human Occupancy Standard), the thermal Comfort is basically a state of mind that expresses satisfaction about the thermal environment.</p>
+<p>By nature, is subjective meaning that different persons have different assessments of thermal comfort. In the literature we have two models that are considered to assess thermal comfort:</p>
+<ul>
+<li><p>the Predicted Mean Vote (PMV)</p></li>
+<li><p>the adaptive model</p></li>
+</ul>
+<p>The Predicted mean vote is an index that predicts the mean value of the thermal sensation votes (self-reported perceptions) of a large group of persons on a sensation scale expressed from -3 to +3 corresponding to the categories “cold,”cool“,”slightly cool“,”neutral“,”slight warm“,”warm“, and”hot“. It was proposed by Fanger and it is based in an analytical model with a series of real experiments, and was latter adopted as an ISO standard.</p>
+<p>The original data was collected by subjecting a large number of people to different conditions within a climate chamber and having them select a position on the scale that best described their comfort sensation. A mathematical model of the relationship between all the environmental and physiological factors was considered and then derived from the data.</p>
+<p>This method treats all occupants as the same and disregards location and adaptation to the thermal environment. It basically states that the indoor temperature should not change as the seasons do. Rather, there should be one set temperature year-round. This is taking a more passive stand that humans do not have to adapt to different temperatures since it will always be constant.</p>
+<p>On the other hand the Adaptive model is a model that relates indoor design temperatures or acceptable temperature ranges to outdoor meteorological or climatological parameters. It is also based on the analyses of a database with results from 160 buildings, which revealed that occupants of naturally ventilated buildings accept and even prefer a wider range of temperatures than their counterparts in sealed, air conditioned buildings because their preferred temperature depends on outdoor conditions.</p>
+<p>In general, it is assumed that any human will feel thermal Comfort within the following general conditions:</p>
+<ul>
+<li><p>an ambient temperature between 20º and 27ºC</p></li>
+<li><p>a relative humidity between 30% to 60%</p></li>
+</ul>
+<p>So, this is represented in this psychrometric chart which is a chart that represents thermodynamic properties of moist air at constant pressure (1 atm) at sea level.</p>
+<div class="figure">
+<img src="PsychrometricChart.SeaLevel.SI.svg" style="width:100.0%" />
+
+</div>
+<p><a href="http://www.flycarpet.net/en/psyonline">Free Online Interactive Psychrometric Chart</a></p>
+<div id="pmv" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> PMV</h3>
+<p>The PMV index is expressed by P.O. Fanger as</p>
+<p><span class="math display">\[PMV = (0.303e ^{0.036M} + 0.028) L\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\(PMV\)</span> : Predicted Mean Vote Index</p>
+<p><span class="math inline">\(L\)</span> : thermal load - defined as the difference between the internal heat production and the heat loss to the actual environment - for a person at comfort skin temperature and evaporative heat loss by sweating at the actual activity level.</p>
+</div>
+<div id="hot-water-modeling" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Hot water modeling</h3>
+<p>Hot water is used in many different applications.</p>
+<p>One of the Main applications is for personal hygiene: bathing in households, hotels or hands washing in hospitals and toilets in buildings.Another application is for washing: dishes, laundry and other cleaning activities.</p>
+<p>The main important variables that determine the hot water services are:</p>
+<ul>
+<li>the water volume that is need to be heated;</li>
+<li>the outlet temperature of the water after it is heated;</li>
+<li>the inlet temperature of the water in the piping system before is heated; and finally the piping heat losses during transportation from the heating system to the usage point (the taps)</li>
+</ul>
+<p>The energy required to heat the water is given by the internal energy variation of the water volume that is going to be heated, which is basically given by:</p>
+<ul>
+<li><p>the product between the water mass (volume times the density of water), the specific heat at constant pressure of water (which is basically 4.18 kJ/kg K for the water temperature around 20ºC which is the value of 1 calorie)</p></li>
+<li><p>the temperature difference between the outlet temperature and the inlet temperature.</p></li>
+</ul>
+<p>The water volume depends on the water flow coming out of the outlets (taps or faucet,shower heads, etc.) and the time during which the outlets are open. Different types of outlets have different flows: for example a standard shower head has a flow of 10 to 20 L per minute, while a low-flow or efficient shower head has a flow of 5 to 10 L per minute. So, for the same shower period (for example 5 min), a standard shower head will require a 50 to 100 L volume of hot water, while the low flow shower head will require only 25 to 50 L. This means that depending on the shower head, the water usage and the energy to heat the water, might be the double of the required.</p>
+<p>A standard sink faucet has also a flow of 10 to 20 L, which means that using a sink faucet during 1 minutes consumes as much hot water as a dish washer machine cycle. The final temperature depends on the usage. For example, water at 60 ºC during 5 s will cause skin scalding - so, the shower temperature should never be above 45 ºC.</p>
+<div id="legionella-bacteria" class="section level4">
+<h4><span class="header-section-number">3.3.2.1</span> Legionella bacteria</h4>
+<p>However, if the technology that is used to produce the hot water has a storage tank, than the water needs to be stored at 60ºC and distributed such that the outlet temperature is never below 55ºC, in order to avoid the growth of legionella bacteria in the piping and storage system (remember that the legionella is the bacteria responsible for the legionnaire’s respiratory disease and it can be found in environments with fresh water (tanks, pipes) where the temperature is between 25 and 45 ºC. The bacteria is killed at temperatures above 60 ºC and will hibernate at temperatures below 20ºC. The initial temperature is the temperature at which the water is distributed in the piping system before it is heated. It depends on the climate conditions: usually is lower in winter and warmer in the summer and even in mild climates it can easily vary in 5ºC from winter to summer.</p>
+<p>The European Guidelines for Control and Prevention of Travel Associated Legionnaires’ Disease recommend that hot water should be stored at 60 °C (140 °F) and distributed such that a temperature of at least 50 °C (122 °F) and preferably 55 °C (131 °F) is achieved within one minute at points of use.</p>
+</div>
+</div>
+</div>
+<div id="influence-of-climate" class="section level2">
+<h2><span class="header-section-number">3.4</span> Influence of climate</h2>
+<div id="degree-days" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Degree Days</h3>
+<p>The main energy end-use in buildings around the world is space heating, in particular in regions with cold climates.The degree days are a very simple and direct methodology to estimate the impact of the climate of a certain region in the heating and cooling needs of the building.</p>
+<p>If it is used for estimate:</p>
+<ul>
+<li>heating needs, we use the heating degree days (HDD)</li>
+<li>cooling needs, we use the cooling degree days (CDD).</li>
+</ul>
+<p>Due to the simplicity, it also has some limitations.</p>
+<p>In any case, the general method to estimate the heating needs but it is not so used to estimate the cooling needs. As the name says (degree days), this indicator is a product between time (in days) and temperature (in degrees).</p>
+<p>It basically tries to estimate by calculating how many days of a year a certain place has a temperature under a certain reference level. It can be computed with daily data (or hourly data integrated to a day).</p>
+<p>In general, the reference temperature is the outside temperature at which people start to use heating appliances, for example 15º or 16ºC, the exterior temperature is the temperature measured by weather stations. The cooling degree days calculation is very similar. The reference temperature is the outside temperature at which people start to use cooling appliances, for example 25ºC or 27ºC, and the exterior temperature is the temperature measured by weather stations.</p>
+<p>So, for example, assuming 25ºC as the reference temperature, one day with an average daily temperature of 22ºC has 0 CDD. On the other hand, one day with an average daily temperature of 30ºC has 5 CDD.</p>
+<p>The formula is similar to HDD. Notice however that in general, CDD are not considered as good estimates as HDD.</p>
+</div>
+<div id="hdd-heating-degree-days" class="section level3">
+<h3><span class="header-section-number">3.4.2</span> HDD (Heating Degree Days)</h3>
+<p><span class="math display">\[HDD (T_{ref}) =\frac{1}{24}\sum_{8760}^{i=1} max (T_{ref}- T_{ext, i} , 0)\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(T_{ref}\)</span> : reference temperature</p>
+<p><span class="math inline">\(T_{ext}\)</span> : exterior temperature</p>
+<p><span class="math inline">\(i\)</span> : inlet temperatures of hot/cold fluid</p>
+<p>It measures the product between the number of days and the number of degrees that the interior temperature is lower (heating) or higher (cooling) than a certain comfort temperature</p>
+<p> </p>
+</div>
+<div id="cdd-cooling-degree-days" class="section level3">
+<h3><span class="header-section-number">3.4.3</span> CDD (Cooling Degree Days)</h3>
+<p><span class="math display">\[CDD (T_{ref}) =\frac{1}{24}\sum_{8760}^{i=1} max (T_{ref, i}- T_{ext} , 0)\]</span></p>
+<p><br />
+</p>
+</div>
+<div id="heating-degree-days-hdd-and-cooling-degree-days-cdd-in-europe" class="section level3">
+<h3><span class="header-section-number">3.4.4</span> Heating Degree Days (HDD) and Cooling Degree Days (CDD) in Europe</h3>
+<p>In terms of HDD in Europe, we can see that the Northern countries can reach 6000 HDD per year. In central Europe this value varies between 2000 and 4000 HDD per year, while on the South (especially in Mediterranean areas) the HDD vary between 600 and 1000 HDD.</p>
+<p>In terms of CDD, the data is some more or less reversed. In general in Europe, the cooling needs estimate, using degree days is significantly smaller than heating needs.</p>
+<p>In particular, in Northern Europe and in Central and Eastern Europe, it is usually less than 200 CDD per year while in the South (in the Mediterranean countries) it varies between 600 and 1000 CDD per year This is aligned with the energy consumption data we have analyzed for Europe.</p>
+<p><img src="HDD.png" style="width:100.0%" /> Source: <a href="https://www.eea.europa.eu/data-and-maps/figures/trend-in-heating-and-cooling">Europe, JCR</a></p>
+<p>More info:</p>
+<p><a href="https://www.eea.europa.eu/data-and-maps/indicators/heating-degree-days" class="uri">https://www.eea.europa.eu/data-and-maps/indicators/heating-degree-days</a></p>
+<p><a href="https://www.eea.europa.eu/data-and-maps/indicators/heating-degree-days/assessment" class="uri">https://www.eea.europa.eu/data-and-maps/indicators/heating-degree-days/assessment</a></p>
+<p><a href="https://www.eea.europa.eu/data-and-maps/figures/trend-in-heating-and-cooling" class="uri">https://www.eea.europa.eu/data-and-maps/figures/trend-in-heating-and-cooling</a></p>
+</div>
+</div>
+<div id="thermal-balance" class="section level2">
+<h2><span class="header-section-number">3.5</span> Thermal Balance</h2>
+<div class="figure">
+<img src="thermalbalance.png" style="width:80.0%" />
+
+</div>
+<p>The thermal balance of a control volume consists of determining the balance of all heat gains and losses in a control volume (room).</p>
+<p>We have four mechanisms that we need to consider:</p>
+<ul>
+<li><p>The heat gains through the envelope (conduction, convection and radiation) - The air mass balance due to natural or artificial ventilation and air leakages through windows frames;</p></li>
+<li><p>Compute solar gains, usually from radiation heat exchange between the room and the sun or the night sky and - The internal gains.</p></li>
+<li><p>The heat transfer through the envelope consists of applying the first law of thermodynamics to a closed system.</p></li>
+<li><p>In the case of a closed system, we have that the internal variation depends on the heat exchange through the borders of the system: walls, windows, floors, ceilings and roofs.</p></li>
+<li><p>The direction of the heat flow through envelope is basically determined by the temperature difference between the air temperature of the room and the outside temperature.</p></li>
+</ul>
+<p>In general we consider convection and conduction exchanges together, thus we use the global heat transfer coefficient U, which includes the conduction and convection coefficients. This coefficient depends on the material (or combination of materials) conductivity, k, and its thickness, L.</p>
+<p>In general, the calculation of this heat flow through any surface is done using the electric analogous, where the heat flow is equivalent to current, the temperature difference is the voltage difference and the inverse of the thermal conductivity is the electrical resistance.</p>
+<p>The internal gains are the gains caused by the heat release of occupants and appliances.</p>
+<p>In general, these gains are estimated considering an average value per area. However, a more detailed calculation can be done.</p>
+<p>In the case of the heat generated by occupants, it depends on either their clothes, metabolism and activity. It is measured in met - metabolism equivalent of task - which corresponds to the release of 58.15 W/m2.</p>
+<p>As the average body area of a human being is 1.75 m2, 1 met is considered to be the heat released by an adult resting (which corresponds to 100 W), when writing the occupant may release 140-180 W, while doing workout can release 300-400 W.</p>
+<p>Regarding the appliances, any electric appliance like computers and TVs releases heat, usually due to the power sources conversion and the processors. The lights also loose heat by radiation and convection.</p>
+<p>Electrical appliances release in general the equivalent to 100 W/m2, while artificial light is considered to be 8 W/m2.The number of hours that the equipments are turned on also impacts the internal gains.</p>
+<p>In these internal gains we do not consider the heat gains related to equipment’s that are specifically used for heating (and cooling), like fireplaces, radiators, or AC system.</p>
+<p>Whenever we have a mass exchange in a control volume, there is an energy gain or loss, depending on the temperature and relative humidity conditions between the air mass inside the system and the new mass that is coming in or out. By applying the 1st law of thermodynamics to the control volume, we can see that it depends on the temperature difference and the mass flow.</p>
+<p>Finally, the solar gains refers to the increase in temperature within a closed space that results from the heat gains through radiation with the sun.The amount of solar gain increases with the radiation intensity, due to season or hour of the day, and with the ability of a material (window, wall) to transmit or reflect the radiation. In general, opaque surfaces, like walls, resist to solar gains, while transparent surfaces, like windows, transmit solar gains.</p>
+<div id="thermal-balance-1" class="section level4">
+<h4><span class="header-section-number">3.5.0.1</span> Thermal Balance</h4>
+<p><span class="math display">\[Q= Q_{in} - Q_{out} = Q_{walls} + Q_{windows}+ Q_{roof}+ Q_{ceiling}\]</span></p>
+<p> </p>
+</div>
+<div id="ventilation-and-air-leakages" class="section level4">
+<h4><span class="header-section-number">3.5.0.2</span> Ventilation and Air Leakages</h4>
+<p><span class="math display">\[\dot{Q} = \dot{m}cp\Delta T\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(cp\)</span> : surface pressure coefficient</p>
+<p><span class="math inline">\(\Delta T\)</span> : temperature difference</p>
+<p><br />
+</p>
+</div>
+<div id="overall-heat-transfer-coefficient-u" class="section level4">
+<h4><span class="header-section-number">3.5.0.3</span> Overall Heat Transfer Coefficient (U)</h4>
+<p><span class="math display">\[Q = U\Delta T\]</span></p>
+<p><span class="math display">\[U = \frac{1}{1/h1 + La/Ka + 1/h2}\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(q\)</span> : heat transfer (W, J/s, Btu/h)</p>
+<p><span class="math inline">\(A\)</span> : heat transfer area (<span class="math inline">\(m^2, ft^2\)</span>)</p>
+<p><span class="math inline">\(k\)</span> : thermal conductivity of material (W/m K or W/m oC, Btu/(hr or ft2/ft))</p>
+<p><span class="math inline">\(dT\)</span> : temperature gradient - difference - in the material (K or oC, oF)</p>
+<p><span class="math inline">\(s\)</span> : material thickness (m, ft)</p>
+</div>
+<div id="heat-balance" class="section level4">
+<h4><span class="header-section-number">3.5.0.4</span> Heat Balance</h4>
+<p><span class="math display">\[Q  = Q_{heating/cooling} + Q_{envelope} + Q_{internal}+ Q_{air}\]</span></p>
+</div>
+<div id="heat-through-envelope" class="section level4">
+<h4><span class="header-section-number">3.5.0.5</span> Heat through envelope</h4>
+<p><span class="math display">\[Q_{envelope}  = HDD\times  Q_{x}\]</span></p>
+<p><span class="math display">\[Q_{x} = A_{ceiling} \times U_{ceiling} \times  A_{floor} \times U_{floor} A_{window} \times  U_{window} + ( A_{wall} - A_{window })  \times U_{wall}\]</span></p>
+</div>
+<div id="heat-through-air-exchange" class="section level4">
+<h4><span class="header-section-number">3.5.0.6</span> Heat through air exchange</h4>
+<p><span class="math display">\[Q = \dot{m} _{leakage} \times  Cp \times  V \times HDD\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(V\)</span> : Volume of the room</p>
+</div>
+<div id="internal-gains" class="section level4">
+<h4><span class="header-section-number">3.5.0.7</span> Internal Gains</h4>
+<p><span class="math display">\[Q_{internal} = Q_{occupants}  + Q_{appliances}\]</span></p>
+</div>
+<div id="solar-gains" class="section level4">
+<h4><span class="header-section-number">3.5.0.8</span> Solar Gains</h4>
+<p><span class="math display">\[Q_{solar}  = AI [T+U(\sigma^\alpha)]\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(A\)</span> : Area</p>
+<p><span class="math inline">\(I\)</span>:irradiation</p>
+<p><span class="math inline">\(TU(\sigma^\alpha)\)</span> : Coefficient that depends on the transmissivity and the absorbed radiation by the surface, through each radiation enters the room</p>
+</div>
+</div>
+<div id="simplified-heating-and-cooling-services-modeling" class="section level2">
+<h2><span class="header-section-number">3.6</span> Simplified Heating and Cooling Services Modeling</h2>
+<p>When we are modeling the space heating and cooling needs, the first step consists in defining the control volume, by indicating the geometry of the space and the materials of the surfaces (and the corresponding properties like the width, thermal resistance, transmittance, etc.)</p>
+<p>Then, we need to determine the climate conditions and for that we consider the heating degree days as an estimate for heating needs; and the cooling degree days as an estimate for cooling needs, knowing that the CDD do not work as good as HDD as an estimator for cooling needs, mostly because solar gains is summer are determinant for cooling needs.</p>
+<p>Then, we need to perform the heat balance, knowing that there are four components:</p>
+<ul>
+<li>the heat gains through the envelope</li>
+<li>the internal gains</li>
+<li>the gains through leakages or ventilation</li>
+<li>the solar gains</li>
+</ul>
+<p>The gains through the envelope consists of multiplying the HDD or CDD by the product of the area and the global heat transfer coefficient of the materials in walls, floors, windows and ceiling.</p>
+<p>For the heat exchange through air (ventilation or leakages) we multiple the air flow from the ventilation system (mechanical or natural) by the volume of the room, the specific heat of air and the temperature difference, which may be also extrapolated through HDD or CDD.</p>
+<p>The air flow may be represented also as a renovation rate, i.e. the amount of air volume that is replaced within a certain time period (like 1 hour). The internal gains, we need to evaluate the gains due to occupants (which depend on the number of occupants, the activity level and the schedule of occupation) and the appliances gains (which depend on the appliances and the number of hours they are used). In general, an average value per floor area is used.</p>
+<p>Finally, the solar gains are computed as heat exchange through radiation, which is the only heat transfer mechanism that does not depend directly from the temperature difference. Thus, it is usually computed through the linearized expression called linearized radiative heat transfer coefficient.</p>
+<p>This tells us that the solar gains depend on the area, the solar irradiation and a coefficient that depends on the transmissivity and the absorbed radiation by the surface, through each the radiation enters the room.</p>
+<div id="material" class="section level4">
+<h4><span class="header-section-number">3.6.0.1</span> Material</h4>
+<ul>
+<li>Simple glaze window</li>
+<li>Double Glaze window</li>
+<li>Simple break wall</li>
+<li>Double brick wall with air cavity</li>
+<li>Concrete floor</li>
+<li>Wood floor</li>
+<li>Ceiling</li>
+</ul>
+</div>
+<div id="hot-water-modelling" class="section level4">
+<h4><span class="header-section-number">3.6.0.2</span> Hot water modelling</h4>
+<p>Changing Product Temperature - Heating up the Product with Steam</p>
+<p>The amount of heat required to raise the temperature of a substance can be expressed as:</p>
+<p><span class="math display">\[\Delta U = m c_{p} \Delta T\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\Delta U\)</span> : quantity (difference) of energy or heat (kJ)</p>
+<p><span class="math inline">\(m\)</span> : mass of substance (kg)</p>
+<p><span class="math inline">\(c_{p}\)</span> : specific heat of substance (kJ/kg K)</p>
+<p><span class="math inline">\(\Delta T\)</span> : temperature (difference) rise of substance</p>
+<p><span class="math inline">\(c_{p}\)</span> 4.18 kJ/kg.K</p>
+</div>
+<div id="pipe-losses" class="section level4">
+<h4><span class="header-section-number">3.6.0.3</span> Pipe Losses</h4>
+<p>Finally, like in any system, the hot water distribution will generate losses in pipes due to conduction and convection losses. These losses are especially important when the hot water generation device is far away from the distribution point (more losses require that the generating system produces hot water at higher temperatures). The losses also depend on the material of the pipes and the insulation material and thickness that is used).</p>
+<p>The losses by conduction in a pipe depend on the temperature difference between the water flowing in the pipe and the outside temperature, the thermal conductivity of the pipe and insulation material and the area, which is the area of a cylinder, and the thickness of the pipe which depend on the outer and inner diameters.</p>
+<p><span class="math display">\[q_{p}= \pi  (T_{2}-T_{1})/ ln (D_{out}/D)\]</span></p>
+</div>
+<div id="references-2" class="section level3">
+<h3><span class="header-section-number">3.6.1</span> References</h3>
+<p>EnergyPlus Url: <a href="https://energyplus.net/" class="uri">https://energyplus.net/</a></p>
+<p>Heat Transfer Terminology Summary (DOE Fundamentals Handbook Thermodynamics, Heat Transfer, and Fluid Flow) <a href="https://www.steamtablesonline.com/pdf/Thermodynamics-Volume1.pdf" class="uri">https://www.steamtablesonline.com/pdf/Thermodynamics-Volume1.pdf</a></p>
+<p>ASHARAE Standard 55 - Thermal Environmental Conditions for Human Occupancy</p>
+<p>Link: <a href="https://www.ashrae.org/resources--publications/bookstore/standard-55-and-user-s-manual" class="uri">https://www.ashrae.org/resources--publications/bookstore/standard-55-and-user-s-manual</a></p>
+<p>Predicted Mean Vote (PMV)</p>
+<p>Fanger, P. O (1970). Thermal comfort : analysis and applications in environmental engineering. Danish Technical Press, Copenhagen</p>
+<p>Fanger, P. O., &amp; Toftum, J. (2002). Extension of the PMV model to non-air-conditioned building in warm climates. Energy and Buildings, Vol. 34, pp. 533-536.</p>
+<p>Adaptive comfort model</p>
+<p>de Dear, Richard; Brager, Gail (1998). “Developing an adaptive model of thermal comfort and preference”. ASHRAE Transactions. 104 (1): 145–67.</p>
+<p>Psychrometric Chart <a href="https://www.ashrae.org/resources--publications/bookstore/psychrometrics" class="uri">https://www.ashrae.org/resources--publications/bookstore/psychrometrics</a></p>
+
+</div>
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="energy-services-in-buildings.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hot-water-lighting-and-electrical-devices.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-Space_Heating_Cooling.Rmd",
+"text": "Edit"
+},
+"download": ["esX Notes.pdf", "esX Notes.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>esX Notes</title>
+  <meta name="description" content="esX Notes">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="esX Notes" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="github.com/INmais" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="esX Notes" />
+  
+  
+  
+
+<meta name="author" content="Técnico Lisboa">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="references-4.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.2/htmlwidgets.js"></script>
+<script src="libs/d3-4.5.0/d3.min.js"></script>
+<script src="libs/sankey-1/sankey.js"></script>
+<script src="libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+<script src="libs/plotly-binding-4.8.0/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.39.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.39.2/plotly-latest.min.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">esX Energy Services - Support notes</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Support Notes</a></li>
+<li class="part"><span><b>I Introduction to Energy Systems</b></span></li>
+<li class="chapter" data-level="1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html"><i class="fa fa-check"></i><b>1</b> Introduction to Energy Systems</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-definition"><i class="fa fa-check"></i><b>1.1</b> Energy definition</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-definition-1"><i class="fa fa-check"></i><b>1.1.1</b> Energy definition</a></li>
+<li class="chapter" data-level="1.1.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#power-definition"><i class="fa fa-check"></i><b>1.1.2</b> Power definition</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-system"><i class="fa fa-check"></i><b>1.2</b> Energy System</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#reference-energy-system"><i class="fa fa-check"></i><b>1.2.1</b> Reference Energy System</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-services-definition"><i class="fa fa-check"></i><b>1.3</b> Energy Services Definition</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#tools-to-describe-energy-systems"><i class="fa fa-check"></i><b>1.4</b> Tools to describe Energy Systems</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-balance"><i class="fa fa-check"></i><b>1.4.1</b> Energy balance</a></li>
+<li class="chapter" data-level="1.4.2" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#how-energy-is-used-in-the-residential-sector-in-portugal"><i class="fa fa-check"></i><b>1.4.2</b> How energy is used in the residential sector in Portugal</a></li>
+<li class="chapter" data-level="1.4.3" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#flux-diagrams"><i class="fa fa-check"></i><b>1.4.3</b> Flux Diagrams</a></li>
+<li class="chapter" data-level="1.4.4" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#sankey-diagram"><i class="fa fa-check"></i><b>1.4.4</b> Sankey Diagram</a></li>
+<li class="chapter" data-level="1.4.5" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-around-the-world"><i class="fa fa-check"></i><b>1.4.5</b> Energy around the World</a></li>
+<li class="chapter" data-level="1.4.6" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#other-sankey-diagrams"><i class="fa fa-check"></i><b>1.4.6</b> Other Sankey Diagrams</a></li>
+<li class="chapter" data-level="1.4.7" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-efficiency-indicators"><i class="fa fa-check"></i><b>1.4.7</b> Energy Efficiency Indicators</a></li>
+<li class="chapter" data-level="1.4.8" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#energy-efficiency-indicators-1"><i class="fa fa-check"></i><b>1.4.8</b> Energy Efficiency Indicators</a></li>
+<li class="chapter" data-level="1.4.9" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#services-energy-indicators"><i class="fa fa-check"></i><b>1.4.9</b> Services energy indicators</a></li>
+<li class="chapter" data-level="1.4.10" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#transports-energy-indicators"><i class="fa fa-check"></i><b>1.4.10</b> Transports energy indicators</a></li>
+<li class="chapter" data-level="1.4.11" data-path="introduction-to-energy-systems.html"><a href="introduction-to-energy-systems.html#references"><i class="fa fa-check"></i><b>1.4.11</b> References</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Energy Services in Buildings</b></span></li>
+<li class="chapter" data-level="2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html"><i class="fa fa-check"></i><b>2</b> Energy Services in Buildings</a><ul>
+<li class="chapter" data-level="2.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-in-buildings"><i class="fa fa-check"></i><b>2.1</b> Energy in Buildings</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#final-energy-consumption-by-sector-and-buildings-energy-mix-2010"><i class="fa fa-check"></i><b>2.1.1</b> Final energy consumption by sector and buildings energy mix, 2010</a></li>
+<li class="chapter" data-level="2.1.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#economic-life-spans-of-energy-consuming-equipment-and-infrastructure"><i class="fa fa-check"></i><b>2.1.2</b> Economic life spans of energy-consuming equipment and infrastructure</a></li>
+<li class="chapter" data-level="2.1.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#distributed-energy-resources"><i class="fa fa-check"></i><b>2.1.3</b> Distributed Energy Resources</a></li>
+<li class="chapter" data-level="2.1.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-electricity-use-as-a-share-of-total-electricity-consumption"><i class="fa fa-check"></i><b>2.1.4</b> Buildings electricity use as a share of total electricity consumption</a></li>
+<li class="chapter" data-level="2.1.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-use-for-power-generation-and-total-final-electricity-demand-2010"><i class="fa fa-check"></i><b>2.1.5</b> Energy use for power generation and total final electricity demand, 2010</a></li>
+<li class="chapter" data-level="2.1.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-end-use-energy-consumption-2010"><i class="fa fa-check"></i><b>2.1.6</b> Buildings end-use energy consumption, 2010</a></li>
+<li class="chapter" data-level="2.1.7" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#global-buildings-energy-consumption-by-energy-source-and-direct-co2-emissions"><i class="fa fa-check"></i><b>2.1.7</b> Global buildings energy consumption by energy source and direct CO2 emissions</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#buildings-sector-energy-consumption-by-energy-source"><i class="fa fa-check"></i><b>2.2</b> Buildings sector energy consumption by energy source</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#contribution-of-co2-emissions-reduction-options-between-the-6ds-and-2ds"><i class="fa fa-check"></i><b>2.2.1</b> Contribution of CO2 emissions reduction options between the 6DS and 2DS</a></li>
+<li class="chapter" data-level="2.2.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#average-house-size-in-relation-to-gdp-per-capita-in-the-2ds"><i class="fa fa-check"></i><b>2.2.2</b> Average house size in relation to GDP per capita in the 2DS</a></li>
+<li class="chapter" data-level="2.2.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#residential-sub-sector-energy-consumption-by-end-use-and-intensity-for-selected-countries"><i class="fa fa-check"></i><b>2.2.3</b> Residential sub-sector energy consumption by end-use and intensity for selected countries</a></li>
+<li class="chapter" data-level="2.2.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-and-co2-emissions-savings-from-6ds-to-2ds-in-the-residential-sub-sector"><i class="fa fa-check"></i><b>2.2.4</b> Energy and CO2 emissions savings from 6DS to 2DS in the residential sub-sector</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#services-sub-sector-energy-consumption-by-end-use-and-intensity-for-selected-countries"><i class="fa fa-check"></i><b>2.3</b> Services sub-sector energy consumption by end-use and intensity for selected countries</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#contribution-of-co2-emissions-reduction-options"><i class="fa fa-check"></i><b>2.3.1</b> Contribution of CO2 emissions reduction options</a></li>
+<li class="chapter" data-level="2.3.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-and-co2-emissions-savings-from-6ds-to-2ds-in-the-services-sub-sector"><i class="fa fa-check"></i><b>2.3.2</b> Energy and CO2 emissions savings from 6DS to 2DS in the services sub-sector</a></li>
+<li class="chapter" data-level="2.3.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#additional-investment-needs-and-cumulative-energy-savings-by-end-use"><i class="fa fa-check"></i><b>2.3.3</b> Additional investment needs and cumulative energy savings by end-use</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#electricity-consumption-comparison"><i class="fa fa-check"></i><b>2.4</b> Electricity Consumption (Comparison)</a></li>
+<li class="chapter" data-level="2.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#survey-on-energy-consumption-in-households---2010-portugal"><i class="fa fa-check"></i><b>2.5</b> Survey on energy consumption in households - 2010 (Portugal)</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-do-parque-habitacional-por-ano-de-construcao---portugal-2010"><i class="fa fa-check"></i><b>2.5.1</b> Caracterização do parque habitacional por ano de construção - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-alojamentos-por-tipologia-de-area-urbana---portugal-2010"><i class="fa fa-check"></i><b>2.5.2</b> Caracterização dos alojamentos por tipologia de área urbana - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#condicoes-de-habitabilidade-dos-alojamentos---portugal-2010"><i class="fa fa-check"></i><b>2.5.3</b> Condições de habitabilidade dos alojamentos - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#tipologia-de-vidros-por-orientacao-de-fachadas---portugal-2010"><i class="fa fa-check"></i><b>2.5.4</b> Tipologia de vidros por orientação de fachadas - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.5" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#n.-de-alojamentos-com-isolamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.5</b> N.º de alojamentos com isolamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-total-com-energia-no-alojamento-e-no-transporte---portugal-e-nuts-i-2010"><i class="fa fa-check"></i><b>2.5.6</b> Consumo e despesa total com energia no alojamento e no transporte - Portugal e NUTS I, 2010</a></li>
+<li class="chapter" data-level="2.5.7" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-com-energia-no-alojamento-por-tipo-de-fonte---portugal-2010"><i class="fa fa-check"></i><b>2.5.7</b> Consumo e despesa com energia no alojamento por tipo de fonte - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.8" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-de-energia-tep-no-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.8</b> Consumo de energia (tep) no alojamento por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.9" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-de-energia-por-alojamento-tepalojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.9</b> Consumo de energia por alojamento (tep/alojamento) por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.10" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-com-energia-no-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.10</b> Despesa com energia (€) no alojamento por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.11" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-com-energia-por-alojamento-alojamento-por-tipo-de-energia-e-tipo-de-utilizacao---portugal-2010"><i class="fa fa-check"></i><b>2.5.11</b> Despesa com energia por alojamento (€/alojamento) por tipo de energia e tipo de utilização - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.12" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#numero-de-alojamentos-por-numero-de-veiculos-automoveis-afectos-ao-alojamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.12</b> Número de alojamentos por número de veículos automóveis afectos ao alojamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.13" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#numero-de-alojamentos-por-numero-de-motociclos-afectos-ao-alojamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.13</b> Número de alojamentos por número de motociclos afectos ao alojamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.14" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#consumo-e-despesa-com-combustiveis-utilizados-nos-veiculos-afectos-aos-individuos-residentes-nos-alojamentos-por-tipo-de-combustivel---portugal-2010"><i class="fa fa-check"></i><b>2.5.14</b> Consumo e despesa com combústiveis utilizados nos veículos afectos aos indivíduos residentes nos alojamentos por tipo de combustível - Portugal, 2010 *</a></li>
+<li class="chapter" data-level="2.5.15" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#despesa-media-mensal-com-combustiveis-utilizados-nos-veiculos-afectos-aos-individuos-residentes-nos-alojamentos-por-escalao-de-rendimento---portugal-2010"><i class="fa fa-check"></i><b>2.5.15</b> Despesa média mensal (€) com combustíveis utilizados nos veículos afectos aos indivíduos residentes nos alojamentos por escalão de rendimento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.16" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-para-aquecimento-do-ambiente-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.16</b> Caracterização dos equipamentos utilizados para Aquecimento do ambiente por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.17" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-do-parque-de-equipamentos-utilizados-arrefecimento-do-ambiente---portugal-2010"><i class="fa fa-check"></i><b>2.5.17</b> Caracterização do parque de equipamentos utilizados arrefecimento do ambiente - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.18" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-para-aquecimento-de-aguas-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.18</b> Caracterização dos equipamentos utilizados para Aquecimento de águas por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.19" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-utilizados-na-cozinha-por-tipo-de-equipamento-e-por-nuts-i-2010"><i class="fa fa-check"></i><b>2.5.19</b> Caracterização dos equipamentos utilizados na Cozinha por tipo de equipamento e por NUTS I, 2010</a></li>
+<li class="chapter" data-level="2.5.20" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-grandes-electrodomesticos-utilizados-nos-alojamentos-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.20</b> Caracterização dos Grandes electrodomésticos utilizados nos alojamentos por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.21" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-pequenos-electrodomesticos-utilizados-no-alojamento-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.21</b> Caracterização dos Pequenos electrodomésticos utilizados no alojamento por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.22" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-dos-equipamentos-de-entretenimento-e-de-informatica-utilizados-nos-alojamentos-por-tipo-de-equipamento---portugal-2010"><i class="fa fa-check"></i><b>2.5.22</b> Caracterização dos Equipamentos de entretenimento e de informática utilizados nos alojamentos por tipo de equipamento - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.23" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#caracterizacao-da-iluminacao-nos-alojamentos-por-tipo-de-lampada---portugal-2010"><i class="fa fa-check"></i><b>2.5.23</b> Caracterização da Iluminação nos alojamentos por tipo de lâmpada - Portugal, 2010</a></li>
+<li class="chapter" data-level="2.5.24" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#classes-de-eficiencia-dos-equipamentos---portugal-2010"><i class="fa fa-check"></i><b>2.5.24</b> Classes de eficiência dos equipamentos - Portugal, 2010</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#references-1"><i class="fa fa-check"></i><b>2.6</b> References</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-demand-in-buildings"><i class="fa fa-check"></i><b>2.6.1</b> Energy Demand in Buildings</a></li>
+<li class="chapter" data-level="2.6.2" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-uses-in-buildings"><i class="fa fa-check"></i><b>2.6.2</b> Energy Uses in Buildings</a></li>
+<li class="chapter" data-level="2.6.3" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#energy-in-residential-buildings"><i class="fa fa-check"></i><b>2.6.3</b> Energy in Residential Buildings</a></li>
+<li class="chapter" data-level="2.6.4" data-path="energy-services-in-buildings.html"><a href="energy-services-in-buildings.html#other"><i class="fa fa-check"></i><b>2.6.4</b> Other</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Space Heating and Cooling</b></span></li>
+<li class="chapter" data-level="3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html"><i class="fa fa-check"></i><b>3</b> Space Heating and Cooling</a><ul>
+<li class="chapter" data-level="3.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermodynamic-heat-transfer-mechanics"><i class="fa fa-check"></i><b>3.1</b> Thermodynamic Heat Transfer Mechanics</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#first-law-of-thermodynamics"><i class="fa fa-check"></i><b>3.1.1</b> First law of thermodynamics</a></li>
+<li class="chapter" data-level="3.1.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#second-law-of-thermodynamics"><i class="fa fa-check"></i><b>3.1.2</b> Second Law of Thermodynamics</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#space-heating-and-cooling-models"><i class="fa fa-check"></i><b>3.2</b> Space Heating and Cooling Models</a></li>
+<li class="chapter" data-level="3.3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermal-comfort"><i class="fa fa-check"></i><b>3.3</b> Thermal Comfort</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#pmv"><i class="fa fa-check"></i><b>3.3.1</b> PMV</a></li>
+<li class="chapter" data-level="3.3.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#hot-water-modeling"><i class="fa fa-check"></i><b>3.3.2</b> Hot water modeling</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#influence-of-climate"><i class="fa fa-check"></i><b>3.4</b> Influence of climate</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#degree-days"><i class="fa fa-check"></i><b>3.4.1</b> Degree Days</a></li>
+<li class="chapter" data-level="3.4.2" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#hdd-heating-degree-days"><i class="fa fa-check"></i><b>3.4.2</b> HDD (Heating Degree Days)</a></li>
+<li class="chapter" data-level="3.4.3" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#cdd-cooling-degree-days"><i class="fa fa-check"></i><b>3.4.3</b> CDD (Cooling Degree Days)</a></li>
+<li class="chapter" data-level="3.4.4" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#heating-degree-days-hdd-and-cooling-degree-days-cdd-in-europe"><i class="fa fa-check"></i><b>3.4.4</b> Heating Degree Days (HDD) and Cooling Degree Days (CDD) in Europe</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#thermal-balance"><i class="fa fa-check"></i><b>3.5</b> Thermal Balance</a></li>
+<li class="chapter" data-level="3.6" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#simplified-heating-and-cooling-services-modeling"><i class="fa fa-check"></i><b>3.6</b> Simplified Heating and Cooling Services Modeling</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="space-heating-and-cooling.html"><a href="space-heating-and-cooling.html#references-2"><i class="fa fa-check"></i><b>3.6.1</b> References</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Hot water, Lighting and electrical devices</b></span></li>
+<li class="chapter" data-level="4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html"><i class="fa fa-check"></i><b>4</b> Hot water, Lighting and electrical devices</a><ul>
+<li class="chapter" data-level="4.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#basic-concepts"><i class="fa fa-check"></i><b>4.1</b> Basic Concepts</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#electrical-potential"><i class="fa fa-check"></i><b>4.1.1</b> Electrical Potential</a></li>
+<li class="chapter" data-level="4.1.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#power-factor-voltage-and-current-phase-relationship"><i class="fa fa-check"></i><b>4.1.2</b> Power Factor, Voltage and current phase relationship</a></li>
+<li class="chapter" data-level="4.1.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#reactive-loads-q"><i class="fa fa-check"></i><b>4.1.3</b> Reactive Loads (Q)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#hot-water-modeling-1"><i class="fa fa-check"></i><b>4.2</b> Hot water modeling</a></li>
+<li class="chapter" data-level="4.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#electrical-appliances"><i class="fa fa-check"></i><b>4.3</b> Electrical Appliances</a></li>
+<li class="chapter" data-level="4.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-concepts"><i class="fa fa-check"></i><b>4.4</b> Lighting Concepts</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-concepts-1"><i class="fa fa-check"></i><b>4.4.1</b> Lighting Concepts</a></li>
+<li class="chapter" data-level="4.4.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-conditions"><i class="fa fa-check"></i><b>4.4.2</b> Lighting Conditions</a></li>
+<li class="chapter" data-level="4.4.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#visual-comfort"><i class="fa fa-check"></i><b>4.4.3</b> Visual comfort</a></li>
+<li class="chapter" data-level="4.4.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#wiens-displacement-law"><i class="fa fa-check"></i><b>4.4.4</b> Wien’s displacement law</a></li>
+<li class="chapter" data-level="4.4.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#glare"><i class="fa fa-check"></i><b>4.4.5</b> Glare</a></li>
+<li class="chapter" data-level="4.4.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#illuminance-from-a-light-source"><i class="fa fa-check"></i><b>4.4.6</b> Illuminance from a Light Source</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#lighting-service-l"><i class="fa fa-check"></i><b>4.5</b> Lighting Service (L)</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#inverse-square-law"><i class="fa fa-check"></i><b>4.5.1</b> Inverse Square Law</a></li>
+<li class="chapter" data-level="4.5.2" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#cosine-law-lamberts-law"><i class="fa fa-check"></i><b>4.5.2</b> Cosine Law (Lambert’s Law)</a></li>
+<li class="chapter" data-level="4.5.3" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#cosine-cubed-law"><i class="fa fa-check"></i><b>4.5.3</b> Cosine Cubed Law</a></li>
+<li class="chapter" data-level="4.5.4" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#useful-lumen-output-ulo"><i class="fa fa-check"></i><b>4.5.4</b> Useful Lumen Output (ULO)</a></li>
+<li class="chapter" data-level="4.5.5" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#illumination-average-area"><i class="fa fa-check"></i><b>4.5.5</b> Illumination Average Area</a></li>
+<li class="chapter" data-level="4.5.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#efficacy-index"><i class="fa fa-check"></i><b>4.5.6</b> Efficacy Index</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="hot-water-lighting-and-electrical-devices.html"><a href="hot-water-lighting-and-electrical-devices.html#references-3"><i class="fa fa-check"></i><b>4.6</b> References</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="references-4.html"><a href="references-4.html"><i class="fa fa-check"></i><b>A</b> References</a><ul>
+<li class="chapter" data-level="A.1" data-path="references-4.html"><a href="references-4.html#energy-services-definition-2"><i class="fa fa-check"></i><b>A.1</b> Energy Services Definition</a><ul>
+<li class="chapter" data-level="A.1.1" data-path="references-4.html"><a href="references-4.html#on-energy-services-definition"><i class="fa fa-check"></i><b>A.1.1</b> On Energy Services Definition</a></li>
+</ul></li>
+<li class="chapter" data-level="A.2" data-path="references-4.html"><a href="references-4.html#energy-services-in-buildings-1"><i class="fa fa-check"></i><b>A.2</b> Energy Services in Buildings</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="formulae.html"><a href="formulae.html"><i class="fa fa-check"></i><b>B</b> Formulae</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">esX Notes</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="formulae" class="section level1">
+<h1><span class="header-section-number">B</span> Formulae</h1>
+<div id="energy-efficiency-mu-as-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.1</span> Energy Efficiency <span class="math inline">\(\mu\)</span> (as %):</h4>
+<p><span class="math display">\[\mu = \frac{energy \, output}{energy \, input} \times 100 \]</span></p>
+<p><br />
+</p>
+</div>
+<div id="conservation-of-energy-formula-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.2</span> Conservation of Energy Formula</h4>
+<p>(Closed System)</p>
+<p><span class="math display">\[\Delta U = Q - W \]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\Delta U\)</span> : as a change in internal energy</p>
+<p><span class="math inline">\(Q\)</span> : the net quantity of heat supplied to the system by its surroundings</p>
+<p><span class="math inline">\(W\)</span> : denotes the net work done by the system.</p>
+<p>(Open System)</p>
+<p><span class="math display">\[ \dot{Q} -\dot{W} = \sum \dot{m_{in}}  - \dot{h_{out}}\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\dot{m}\)</span> : is the change in mass with respect to time (“flow”)</p>
+</div>
+<div id="heat-transferred-by-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.3</span> Heat transferred by:</h4>
+</div>
+<div id="conduction-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.4</span> 1. Conduction</h4>
+<p><span class="math display">\[ \dot{Q}= KA \frac{T_{1}-T_{2}}{1} \]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(K\)</span> : is the thermal conductivity constant (obtained by experimentation in W/m.K.)</p>
+<p><span class="math inline">\(A\)</span> : is the area of the surface</p>
+<p><span class="math inline">\(T\)</span> : is for the temperature of the system</p>
+</div>
+<div id="convection-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.5</span> 2. Convection</h4>
+<p><span class="math display">\[\dot{Q}= hA ({T_{1}-T_{2}}) \]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(h\)</span> : convective heat transfer coefficient</p>
+<p><span class="math inline">\(A\)</span> : is the area implied in the heat transfer process</p>
+<p><span class="math inline">\(T\)</span>: is for the temperature of the system</p>
+</div>
+<div id="radiation-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.6</span> 3. Radiation</h4>
+<p><span class="math display">\[\dot{Q}= \varepsilon \sigma A ({T^{4}-T_0^{4}})\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\varepsilon\)</span> : is the emissivity of the system</p>
+<p><span class="math inline">\(\sigma\)</span> : is the constant of Stephan-Boltzmann <span class="math inline">\(5.670367(13)\times10^{-8} W \cdot m^{-2} \cdot K^{-8} )\)</span></p>
+<p><span class="math inline">\(A\)</span>: is the area involved in the heat transfer by radiation</p>
+<p><span class="math inline">\(({T^{4}-T_0^{4}})\)</span> : is the difference of temperature between two systems</p>
+</div>
+<div id="pmv-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.7</span> PMV</h4>
+<p>The PMV index is expressed by P.O. Fanger as</p>
+<p><span class="math display">\[ PMV = (0.303e ^{0.036M} + 0.028) L \]</span></p>
+<p>where:</p>
+<p><span class="math inline">\(PMV\)</span> : Predicted Mean Vote Index</p>
+<p><span class="math inline">\(L\)</span> : thermal load - defined as the difference between the internal heat production and the heat loss to the actual environment - for a person at comfort skin temperature and evaporative heat loss by sweating at the actual activity level.</p>
+</div>
+<div id="hdd-heating-degree-days-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.8</span> HDD (Heating Degree Days)</h4>
+<p><span class="math display">\[HDD (T_{ref}) =\frac{1}{24}\sum_{8760}^{i=1} max (T_{ref}- T_{ext, i} , 0)\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(T_{ref}\)</span> : reference temperature</p>
+<p><span class="math inline">\(T_{ext}\)</span> : exterior temperature</p>
+<p><span class="math inline">\(i\)</span> : inlet temperatures of hot/cold fluid</p>
+<p> </p>
+</div>
+<div id="cdd-cooling-degree-days-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.9</span> CDD (Cooling Degree Days)</h4>
+<p><span class="math display">\[CDD (T_{ref}) =\frac{1}{24}\sum_{8760}^{i=1} max (T_{ref, i}- T_{ext} , 0)\]</span></p>
+<p><br />
+####Thermal Balance</p>
+<p><span class="math display">\[Q= Q_{in} - Q_{out} = Q_{walls} + Q_{windows}+ Q_{roof}+ Q_{ceiling}\]</span></p>
+<p> </p>
+</div>
+<div id="ventilation-and-air-leakages-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.10</span> Ventilation and Air Leakages</h4>
+<p><span class="math display">\[\dot{Q} = \dot{m}cp\Delta T\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(cp\)</span> : surface pressure coefficient</p>
+<p><span class="math inline">\(\Delta T\)</span> : temperature difference</p>
+<p><br />
+####Overall Heat Transfer Coefficient (U)</p>
+<p><span class="math display">\[Q = U\Delta T\]</span></p>
+<p><span class="math display">\[U = \frac{1}{1/h1 + La/Ka + 1/h2}\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(q\)</span> : heat transfer (W, J/s, Btu/h)</p>
+<p><span class="math inline">\(A\)</span> : heat transfer area (<span class="math inline">\(m^2, ft^2\)</span>)</p>
+<p><span class="math inline">\(k\)</span> : thermal conductivity of material (W/m K or W/m oC, Btu/(hr or ft2/ft))</p>
+<p><span class="math inline">\(dT\)</span> : temperature gradient - difference - in the material (K or oC, oF)</p>
+<p><span class="math inline">\(s\)</span> : material thickness (m, ft)</p>
+</div>
+<div id="heat-balance-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.11</span> Heat Balance</h4>
+<p><span class="math display">\[Q  = Q_{heating/cooling} + Q_{envelope} + Q_{internal}+ Q_{air}\]</span></p>
+</div>
+<div id="heat-through-envelope-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.12</span> Heat through envelope</h4>
+<p><span class="math display">\[Q_{envelope}  = HDD\times  Q_{x}\]</span></p>
+<p><span class="math display">\[Q_{x} = A_{ceiling} \times U_{ceiling} \times  A_{floor} \times U_{floor} A_{window} \times  U_{window} + ( A_{wall} - A_{window })  \times U_{wall}\]</span></p>
+</div>
+<div id="heat-through-air-exchange-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.13</span> Heat through air exchange</h4>
+<p><span class="math display">\[Q = \dot{m} _{leakage} \times  Cp \times  V \times HDD\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(V\)</span> : Volume of the room</p>
+</div>
+<div id="internal-gains-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.14</span> Internal Gains</h4>
+<p><span class="math display">\[Q_{internal} = Q_{occupants}  + Q_{appliances}\]</span></p>
+</div>
+<div id="solar-gains-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.15</span> Solar Gains</h4>
+<p><span class="math display">\[Q_{solar}  = AI [T+U(\sigma^\alpha)]\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(A\)</span> : Area</p>
+<p><span class="math inline">\(I\)</span>:irradiation</p>
+<p><span class="math inline">\(TU(\sigma^\alpha)\)</span> : Coefficient that depends on the transmissivity and the absorbed radiation by the surface, through each radiation enters the room</p>
+</div>
+<div id="hot-water-modelling-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.16</span> Hot water modelling</h4>
+<p>Changing Product Temperature - Heating up the Product with Steam</p>
+<p>The amount of heat required to raise the temperature of a substance can be expressed as:</p>
+<p><span class="math display">\[\Delta U = m c_{p} \Delta T\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\Delta U\)</span> : quantity (difference) of energy or heat (kJ)</p>
+<p><span class="math inline">\(m\)</span> : mass of substance (kg)</p>
+<p><span class="math inline">\(c_{p}\)</span> : specific heat of substance (kJ/kg K)</p>
+<p><span class="math inline">\(\Delta T\)</span> : temperature (difference) rise of substance</p>
+<p><span class="math inline">\(c_{p}\)</span> 4.18 kJ/kg.K</p>
+</div>
+<div id="pipe-losses-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.17</span> Pipe Losses</h4>
+<p><span class="math display">\[q_{p}= \pi  (T_{2}-T_{1})/ ln (D_{out}/D)\]</span></p>
+</div>
+<div id="enthalpy" class="section level4">
+<h4><span class="header-section-number">B.0.0.18</span> Enthalpy</h4>
+<p>The enthalpy change associated with the change in temperature and specific humidity of the present state and a reference state, by:</p>
+<p><span class="math display">\[\Delta h = h-h_{ref} = [Cp_{dry\, air}T+ w(Cp_{water\, vapour}T+h_{fg})]-[Cp_{dry\, air}T+ w(Cp_{water\, vapour}T+h_{fg})]\]</span></p>
+<p>Since the reference conditions are typically considered to be ° C and dry, enthalpy air from the reference state is calculated by:</p>
+<p><span class="math display">\[h = Cp_{dry\, air}T+ w(Cp_{water\, vapour}T+h_{fg})\]</span></p>
+<p>This expression is usually analyzed according to a sensitive component <span class="math inline">\(\Delta h_{sen} = (Cp_{dry\, air}+ w \times Cp_{water\, vapour})T\)</span> and is a latent component <span class="math inline">\(h_{lat} =(h_{fg})w\)</span>. Since the specific humidity takes very low values in climatization situations, the psychrometric chart is defined by the axis of dry temperature and specific humidity. Generally, the following values are considered for specific heat and enthalpy of phase:</p>
+<p><span class="math display">\[h = 1.01\times T + w(1.9T + 2480)\]</span></p>
+</div>
+<div id="relative-humidity" class="section level4">
+<h4><span class="header-section-number">B.0.0.19</span> Relative humidity</h4>
+<p>The relative humidity is calculated by the ratio between the effective vapor pressure and the maximum vapor pressure. The maximum vapor pressure corresponds to the saturated vapor pressure temperature (pvsat (T)).</p>
+<p><span class="math display">\[RH = \frac{p_v}{p_{vsat}(T)}\times 100 \%\]</span></p>
+</div>
+<div id="saturated-vapor-pressure" class="section level4">
+<h4><span class="header-section-number">B.0.0.20</span> Saturated Vapor Pressure</h4>
+<p>The saturated vapor pressure is obtained directly from the water vapor tables, being a function of temperature, and can be obtained by the following correlation, where T is in ° C and pvsat in kPa.</p>
+<p><span class="math display">\[p_{vsat}(T)= 10^{(28.59051-8.2log(T+273.16)+0.0024804(T+273.16) - \frac{3142.31}{(T+273.16)})}\]</span></p>
+</div>
+<div id="specific-humidity" class="section level4">
+<h4><span class="header-section-number">B.0.0.21</span> Specific humidity</h4>
+<p>While the relative humidity establishes a relationship between the volume and the vapor the maximum possible vapor volume, the specific humidity establishes a mass ratio between water vapor and dry air present in the mixture, being defined by:</p>
+<p><span class="math display">\[w= 0.622\frac{p_{v}}{p_{atm}-p_{v}}\]</span></p>
+<p>where patm is the atmospheric pressure, which assumes the normal value of 101,325 kPa.</p>
+</div>
+<div id="dry-temperature-and-wet-temperature" class="section level4">
+<h4><span class="header-section-number">B.0.0.22</span> Dry temperature and wet temperature</h4>
+<p>The dry and humid temperature are related by the following expression:</p>
+<p><span class="math display">\[p_{v} = p_{vsat}(T_h) - 0.000666(T_s-T_h)\]</span></p>
+</div>
+<div id="lighting-concepts-2" class="section level4">
+<h4><span class="header-section-number">B.0.0.23</span> Lighting Concepts</h4>
+<p>Luminous Flux (<span class="math inline">\(\Phi\ : lm\setminus m^2\)</span>)</p>
+</div>
+<div id="illuminance-from-a-light-source-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.24</span> Illuminance from a Light Source</h4>
+<p><span class="math display">\[E = \frac{lcos\Phi }{d^2}\]</span></p>
+<p>Where: <span class="math inline">\(E\)</span> : illuminance from a certain place (lux)</p>
+<p><span class="math inline">\(d\)</span> : distance to the light source</p>
+<p><span class="math inline">\(\Phi\)</span> : Angle from the light source</p>
+<p><span class="math inline">\(I\)</span>: light source luminous intensity (lm)</p>
+</div>
+<div id="lighting-service-l-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.25</span> Lighting Service (L)</h4>
+<p>Amount of time that the activity takes place</p>
+<p><span class="math display">\[L = E\times A\times  \Delta T(lm. s)\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(E\)</span> : Required level of illuminance in a certain place (lux)</p>
+<p><span class="math inline">\(A\)</span> : Area which requires a certain level of illuminance (<span class="math inline">\(m^2\)</span>)</p>
+<p><span class="math inline">\(\Delta\)</span> : time period</p>
+</div>
+<div id="inverse-square-law-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.26</span> Inverse Square Law</h4>
+<p>(The intensity of illumination produced by a point source varies inversely as square of the distance from the source.)</p>
+<p><span class="math display">\[E = \frac{I}{d^2}\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(I\)</span>: intensity of illumination</p>
+<p><span class="math inline">\(d\)</span>: distance from the source</p>
+</div>
+<div id="cosine-law-lamberts-law-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.27</span> Cosine Law (Lambert’s Law)</h4>
+<p><span class="math display">\[E_H = \frac{I}{d^2}\cos\Theta\]</span></p>
+<p><span class="math inline">\(I\)</span>: intensity of illumination</p>
+<p><span class="math inline">\(d\)</span>: distance from the source</p>
+<p><span class="math inline">\(\Theta\)</span>: angle from the light source</p>
+</div>
+<div id="cosine-cubed-law-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.28</span> Cosine Cubed Law</h4>
+<p><span class="math display">\[E_H = \frac{I}{d^2}\cos^3\Theta\]</span></p>
+</div>
+<div id="useful-lumen-output-ulo-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.29</span> Useful Lumen Output (ULO)</h4>
+<p><span class="math display">\[ULO = (n\times N\times F)\times(UF)\]</span> Where:</p>
+<p><span class="math inline">\(n\)</span>: lamp number per fixture</p>
+<p><span class="math inline">\(N\)</span>: total fixture number</p>
+<p><span class="math inline">\(F\)</span>: Individual Lamp Lumem output</p>
+<p><span class="math inline">\(UF\)</span>:utilisation factor</p>
+</div>
+<div id="illumination-average-area-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.30</span> Illumination Average Area</h4>
+<p>(rate of the portion of Lumen Output with influence in the lighting of an area)</p>
+<p><span class="math display">\[E = (n\times N\times F \times UF \times LLF)/A\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(E\)</span>: Illuminance Average (in lux)</p>
+<p><span class="math inline">\(n\)</span>: lamp number per fixture</p>
+<p><span class="math inline">\(N\)</span>: total fixture number</p>
+<p><span class="math inline">\(F\)</span>: Individual Lamp Lumem output</p>
+<p><span class="math inline">\(UF\)</span>:utilisation factor</p>
+<p><span class="math inline">\(A\)</span>:Area</p>
+<p><span class="math inline">\(LLF\)</span>: Light Loss Factor</p>
+</div>
+<div id="efficacy-index-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.31</span> Efficacy Index</h4>
+<p><span class="math display">\[P(W)/100 (lux)/m^2\]</span></p>
+<p>(it shoud be <span class="math inline">\(&lt;5\)</span>)</p>
+</div>
+<div id="electrical-potential-1" class="section level4">
+<h4><span class="header-section-number">B.0.0.32</span> Electrical Potential</h4>
+<p><span class="math display">\[P = U\times I\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(P\)</span> : Power (Watt)</p>
+<p><span class="math inline">\(U\)</span>: voltage (volts)</p>
+<p><span class="math inline">\(I\)</span>: current (Amperes)</p>
+</div>
+<div id="shape-factor" class="section level4">
+<h4><span class="header-section-number">B.0.0.33</span> Shape Factor</h4>
+<p>(indicator of the compacness of a building)</p>
+<p><span class="math display">\[FF= \frac{A}{V}(m^2/ m^3)\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(A\)</span>: Area <span class="math inline">\((m^2)\)</span></p>
+<p><span class="math inline">\(V\)</span>: Volume <span class="math inline">\((m^3)\)</span></p>
+</div>
+<div id="opportunity-cost" class="section level4">
+<h4><span class="header-section-number">B.0.0.34</span> Opportunity Cost</h4>
+<p><span class="math display">\[Opportunity \ Cost = Return \ on \ most \  Profitable \ Investment \ Choice - Return \ on \ Investment \  Chosen  \ to  \ Pursue\]</span></p>
+</div>
+<div id="future-value" class="section level4">
+<h4><span class="header-section-number">B.0.0.35</span> Future Value</h4>
+<p><span class="math display">\[Future\ Value = Present \ Value \cdot (1+i)^n\]</span></p>
+</div>
+<div id="present-value" class="section level4">
+<h4><span class="header-section-number">B.0.0.36</span> Present Value</h4>
+<p><span class="math display">\[Present\ Value = \frac{C}{(1+i)^n}\]</span></p>
+<p><span class="math inline">\(C\)</span> - Net amount of money (cash-flows) that goes in or out of a project</p>
+<p><span class="math inline">\(n\)</span> is the number of compounding periods between the present date and the date where the sum is worth C</p>
+<p><span class="math inline">\(i\)</span> is the interest rate for one compounding period (the end of a compounding period is when interest is applied, for example, annually, semiannually, quarterly, monthly, daily).</p>
+</div>
+<div id="annuity" class="section level4">
+<h4><span class="header-section-number">B.0.0.37</span> Annuity</h4>
+<p>Let <span class="math inline">\(a_{n}\)</span> denote the present value of the annuity. As the present value of the <span class="math inline">\(j^{th}\)</span> payment is <span class="math inline">\(v^{j}\)</span>, where v = 1/(1+i) is the discount factor, the present value of the annuity is:</p>
+<p><span class="math display">\[a_{n}= v + v^{2} + v^{3}+...+ v^{n}\]</span></p>
+<p><span class="math display">\[= v \times\left [ \frac{1-v^n}{1-v} \right ]\]</span></p>
+<p><span class="math display">\[= \frac{1-v^n}{i}\]</span></p>
+<p><span class="math display">\[= \frac{1-(1+i)^{-n}}{i}\]</span></p>
+<p>The accumulated value of the annuity at time <span class="math inline">\(n\)</span> is denoted by <span class="math inline">\(s_{n}\)</span></p>
+<p>This is the future value of ane at time <span class="math inline">\(n\)</span>. Thus, we have:</p>
+<p><span class="math display">\[s_{n} = s_{n} \times (i+1)^n\]</span></p>
+<p><span class="math display">\[s_{n} =\frac{(1+i)^{n}-1}{i}\]</span></p>
+<p>If the annuity is of level payments of P, the present and future values of the annuity are <span class="math inline">\(Pa_n\)</span> and <span class="math inline">\(Ps_n\)</span>, respectively.</p>
+<p>Given that A = annual repayment amount, the present value of one annual repayment amount paid in t years time is</p>
+<p><span class="math display">\[P= \frac{A}{(1+i)^t}\]</span>,where <span class="math inline">\(i\)</span> is the annual rate of interest expressed as a decimal or fraction</p>
+<p>Given that A = annual repayment amount, the present value of one annual repayment amount paid in t years time is</p>
+<p>Loan amount = sum of the present value of all the repayments (assuming payment at the end of each payment period)</p>
+<p>Where:</p>
+<p><span class="math inline">\(P\)</span> = Loan amount</p>
+<p><span class="math inline">\(A\)</span> = periodic repayment amount,</p>
+<p><span class="math inline">\(t\)</span> = the number of payment periods,</p>
+<p><span class="math inline">\(i\)</span> = the interest rate for the payment period expressed as a decimal or fraction</p>
+<p><span class="math display">\[P =\frac{A}{(1+i)} + \frac{A}{(1+i)^2} + \frac{A}{(1+i)^3} + .... \frac{A}{(1+i)^t}\]</span></p>
+<p><span class="math display">\[A =\frac{1}{(1+i)} + \frac{1}{(1+i)^2} + \frac{1}{(1+i)^3} + .... \frac{1}{(1+i)^t}\]</span></p>
+<p><span class="math display">\[\Rightarrow A = P\frac{i(1+i)^t}{(1+i)^t-1}\]</span></p>
+<p>This type of calculation is so common that it is convenient to derive a formula to shortcut the calculation for the regular repayment <span class="math inline">\(A\)</span>. By considering the general case of an amortised loan with interest rate <span class="math inline">\(i\)</span>, taken out over <span class="math inline">\(t\)</span> years, for a loan amount of <span class="math inline">\(P\)</span>, a geometric series can be used to derive the general formula:</p>
+<p><span class="math display">\[A= P\frac{i(1+i)^t}{(1+i)^t-1}\]</span></p>
+</div>
+<div id="net-present-value-npv" class="section level4">
+<h4><span class="header-section-number">B.0.0.38</span> Net Present Value (NPV)</h4>
+<p><span class="math display">\[NPV_{i, N}  \sum_{n=0}^{N}\frac{C_n}{(1+i)^n} - Investment\]</span></p>
+<p>When cash inflows are even:</p>
+<p><span class="math display">\[NPV = C × 1 − (1 + i)^{-n} − Initial \ Investment\]</span></p>
+<p>In the above formula, <span class="math inline">\(C\)</span> is the net cash inflow expected to be received in each period; <span class="math inline">\(i\)</span> is the required rate of return per period; <span class="math inline">\(n\)</span> are the number of periods during which the project is expected to operate and generate cash inflows.</p>
+<p>When cash inflows are uneven:</p>
+<p><span class="math display">\[NPV = C1 + ...+C_3 − Initial \ Investment\]</span></p>
+<p><span class="math inline">\(C_1:(1 + i)^1\)</span></p>
+<p><span class="math inline">\(C_2:(1 + i)^2\)</span></p>
+<p><span class="math inline">\(C_3:(1 + i)^3\)</span></p>
+<p>Where, <span class="math inline">\(i\)</span> is the target rate of return per period;</p>
+<p><span class="math inline">\(C1\)</span> is the net cash inflow during the first period;</p>
+<p><span class="math inline">\(C_2\)</span> is the net cash inflow during the second period;</p>
+<p><span class="math inline">\(C_3\)</span> is the net cash inflow during the third period, and so on …</p>
+</div>
+<div id="internal-rate-of-return-irr" class="section level4">
+<h4><span class="header-section-number">B.0.0.39</span> Internal Rate of Return (IRR)</h4>
+<p>The Internal Rate of Return (IRR), corresponds to finding out what is the rate of return on the project that makes the NPV equal to 0.</p>
+<p><span class="math display">\[IRR=  \sum_{n=0}^{N}\frac{C_n}{(1+i)^n} = 0\]</span></p>
+</div>
+<div id="payback" class="section level4">
+<h4><span class="header-section-number">B.0.0.40</span> Payback</h4>
+<p><span class="math display">\[Payback \, Period = \frac{Amount\,Invested}{Estimated\,Net\,Cash\,Flow}\]</span></p>
+</div>
+<div id="accounting-equation" class="section level4">
+<h4><span class="header-section-number">B.0.0.41</span> Accounting Equation</h4>
+<p><span class="math display">\[Assets = Liabilities + Owner&#39; s\  Equity\]</span></p>
+<p><span class="math inline">\(Assets = Liabilities + Equity\)</span></p>
+<p><span class="math inline">\(PV \  System = Accounts \  payable + None\)</span></p>
+<p><span class="math inline">\(1000 = 1000 + 0\)</span></p>
+<p><span class="math display">\[Assets = Liabilities + Capital + Revenue - Expenses - Drawings\]</span></p>
+</div>
+<div id="levelized-cost-of-energy-lcoe" class="section level4">
+<h4><span class="header-section-number">B.0.0.42</span> Levelized Cost of Energy (LCOE)</h4>
+<p><span class="math display">\[LCOE = \frac{sum \ of \ costs\ \ over \ lifetime}{sum \ of \ eletrical\ energy\ produced \ over \  lifetime} = \frac{\sum_{t=1}^{n}\frac{I_t+M_t+F_t}{(1+r)^n}} {\sum_{t=1}^{n}\frac{E_t}{(1+r)^n}}\]</span></p>
+<p><span class="math inline">\(I_t\)</span> = Investment expenditures in year t (including financing)</p>
+<p><span class="math inline">\(M_t\)</span> = Operations and maintenance expenditures in year t</p>
+<p><span class="math inline">\(F_t\)</span> = Fuel expenditures in year t</p>
+<p><span class="math inline">\(E_t\)</span> = Electricity generation in year t</p>
+<p><span class="math inline">\(r\)</span> = Discount rate</p>
+<p><span class="math inline">\(n\)</span> = Life of the system</p>
+</div>
+<div id="cost-optimaly-methodology" class="section level4">
+<h4><span class="header-section-number">B.0.0.43</span> Cost-Optimaly Methodology</h4>
+<p>The global cost must be calculated according to EN15459 as indicated in the formula:</p>
+<p><span class="math display">\[C_{g}(\tau) = C_I \sum{_j}[ \sum_{i=1}^{\tau}(C_{a,i(j)} \cdot R_d(i)) - C_{f\tau}(j)]\]</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(Cg(t)\)</span> are the Global costs referring to the starting year τ=0,</p>
+<p><span class="math inline">\(Cl\)</span> are the Initial investment costs,</p>
+<p><span class="math inline">\(Ca,i(j)\)</span> are the annual costs year i for energy-related component j (energy costs, operational costs, periodic or replacement costs, maintenance costs),</p>
+<p><span class="math inline">\(Rd(i)\)</span> is the discount rate for year i (depending on interest rate),</p>
+<p><span class="math inline">\(Vf,τ(j)\)</span> is the final value of component j at the end of the calculation period (referred to the starting year τ=0 ),</p>
+</div>
+<div id="capital-asset-pricing-model-capm" class="section level4">
+<h4><span class="header-section-number">B.0.0.44</span> Capital Asset Pricing Model (CAPM)</h4>
+<p><span class="math inline">\(CAPM = R_f + \beta \times R_m\)</span> and <span class="math inline">\(\beta=R_f+(r_m−r_f)\)</span></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="references-4.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-Formulae.Rmd",
+"text": "Edit"
+},
+"download": ["esX Notes.pdf", "esX Notes.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
